@@ -7,6 +7,8 @@
     <meta name="author" content="Lahiru Lakshan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="Assets/linkIcon/Screenshot%202025-02-02%20185240.png">
+    <link rel="stylesheet" href="Assets/lib/normalize.css">
+    <link rel="stylesheet" href="Style/Style.css">
     <title>Lahiru Lakshan</title>
 </head>
 <body>
@@ -30,11 +32,11 @@
 <!-- Home Section -->
 <section id="Home">
     <!-- Left side-->
-    <div>
+    <div class="left">
         <!--Description-->
-        <div>
-            <h2>Lahiru Lakshan</h2>
-            <h2>Software Engineer</h2>
+        <div class="desc">
+            <h2 class="name">Lahiru Lakshan</h2>
+            <h2 class="job">Software Engineer</h2>
             <pre>
               <p>
                 As a Software Engineering student, I specialize in building
@@ -45,13 +47,13 @@
             </pre>
         </div>
         <!--Images-->
-        <div>
-            <a href=""><img src="Assets/home/linkedin.png" width="20"></a>
-            <a href=""><img src="Assets/home/github.png" width="20"></a>
+        <div class="img">
+            <a class="linkedin" href=""><img src="Assets/home/linkedin.png" width="20"></a>
+            <a class="github" href=""><img src="Assets/home/github.png" width="20"></a>
         </div>
     </div>
     <!-- Right side-->
-    <div>
+    <div class="right">
         <img src="Assets/home/WhatsApp%20Image%202025-01-16%20at%2015.36.44_de1cd843.jpg" width="200">
     </div>
 </section>
@@ -59,15 +61,15 @@
 <!-- About me Section -->
 <section id="About">
     <!--Left side-->
-    <div>
+    <div class="left">
         <img src="Assets/About/WhatsApp%20Image%202025-01-16%20at%2015.25.15_d5c335d0.jpg" width="200">
     </div>
     <!--Right side-->
-    <div>
+    <div class="right">
         <!--Description-->
-        <div>
-            <h2>Who Am I?</h2>
-            <h4>Lahiru Lakshan</h4>
+        <div class="desc">
+            <h2 class="title">Who Am I?</h2>
+            <h4 class="name">Lahiru Lakshan</h4>
             <pre>
           <p>
             I am a dedicated Software Engineering student with a
@@ -84,11 +86,11 @@
         </pre>
         </div>
         <!--Images-->
-        <div>
-            <a href=""><img src="Assets/About/linkedin.png" width="20"></a>
-            <a href=""><img src="Assets/About/github.png" width="20"></a>
-            <a href=""><img src="Assets/About/facebook.png" width="20"></a>
-            <a href=""><img src="Assets/About/instagram.png" width="20"></a>
+        <div class="img">
+            <a class="linkedin" href=""><img src="Assets/About/linkedin.png" width="20"></a>
+            <a class="github" href=""><img src="Assets/About/github.png" width="20"></a>
+            <a class="facebook" href=""><img src="Assets/About/facebook.png" width="20"></a>
+            <a class="instagram" href=""><img src="Assets/About/instagram.png" width="20"></a>
         </div>
     </div>
 </section>
@@ -97,7 +99,7 @@
 <section id="Education">
     <h2>Educational Journey</h2>
     <!--01-->
-    <article>
+    <article class="articleOne">
         <img src="Assets/Education/graduation.png" width="50">
         <div>
             <img src="Assets/Education/schedule.png" width="30">
@@ -114,7 +116,7 @@
     </article>
 
     <!--02-->
-    <article>
+    <article class="articleTwo">
         <img src="Assets/Education/school.png" width="50">
         <div>
             <img src="Assets/Education/schedule.png" width="30">
@@ -127,7 +129,7 @@
     </article>
 
     <!--03-->
-    <article>
+    <article class="articleThree">
         <img src="Assets/Education/school.png" width="50">
         <div>
             <img src="Assets/Education/schedule.png" width="30">
@@ -144,7 +146,7 @@
 <section id="Assignment">
     <h2>Assignment</h2>
     <!--Left Side-->
-    <div>
+    <div class="left">
         <div>
             <h3>Assignment 1</h3>
             <pre>
@@ -154,7 +156,7 @@
     </div>
 
     <!--Right Side-->
-    <div>
+    <div class="right">
         <div>
             <h3>Assignment 2</h3>
             <pre>
@@ -183,7 +185,7 @@
                 and object-oriented programming principles.
             </p>
         </pre>
-        <div>
+        <div class="list">
             <ul>
                 <li>Java</li>
                 <li>Javafx</li>
@@ -192,8 +194,8 @@
             </ul>
         </div>
     </div>
-    <img src="Assets/Project/rb_77706.png" width="80">
-    <img src="Assets/Project/rb_77706.png" width="80">
+    <img class="imgOne" src="Assets/Project/rb_77706.png" width="80">
+    <img class="imgTwo" src="Assets/Project/rb_77706.png" width="80">
     <button>View Project</button>
 </section>
 
@@ -202,32 +204,32 @@
     <h2>Skills</h2>
 
     <!--programming languages-->
-    <div>
+    <div class="language">
         <h3>Programming Languages</h3>
-        <div>
+        <div class="imgOne">
             <img src="Assets/Skill/pngwing.com%20(1).png" width="100">
         </div>
-        <div>
+        <div class="imgTwo">
             <img src="Assets/Skill/pngwing.com%20(2).png" width="100">
             <h4>Java Script</h4>
         </div>
     </div>
 
     <!--frontend development-->
-    <div>
+    <div class="frontend">
         <h3>Frontend Development</h3>
-        <div>
+        <div class="imgOne">
             <img src="Assets/Skill/html-5.png" width="100">
             <h4>HTML</h4>
         </div>
-        <div>
+        <div class="imgTwo">
             <img src="Assets/Skill/css-3.png" width="100">
             <h4>CSS</h4>
         </div>
     </div>
 
     <!--backend development and database-->
-    <div>
+    <div class="backend">
         <h3>Backend Development and Database</h3>
         <div>
             <img src="Assets/Skill/pngegg.png" width="100">
@@ -236,25 +238,25 @@
     </div>
 
     <!--development tools-->
-    <div>
+    <div class="tools">
         <h3>Development tools</h3>
-        <div>
+        <div class="imgOne">
             <img src="Assets/Skill/pngegg%20(1).png" width="100">
             <h4>Git</h4>
         </div>
-        <div>
+        <div class="imgTwo">
             <img src="Assets/Skill/github.png" width="100">
             <h4>GitHub</h4>
         </div>
-        <div>
+        <div class="imgThree">
             <img src="Assets/Skill/pngwing.com%20(3).png" width="100">
             <h4>VS code</h4>
         </div>
-        <div>
+        <div class="imgFour">
             <img src="Assets/Skill/b8f9a269e074e4480d66b85f72d9045c.png" width="100">
             <h4>IntelliJ idea</h4>
         </div>
-        <div>
+        <div class="imgFive">
             <img src="Assets/Skill/pngwing.com%20(4).png" width="100">
             <h4>Figma</h4>
         </div>
@@ -265,34 +267,34 @@
 <section id="Contact">
     <h2>Contact</h2>
     <!--left side-->
-    <div>
+    <div class="contact">
         <h3>Let’s Work Together</h3>
         <p>Let’s connect! Whether you have a question, a collaboration idea,
             or just want to chat, feel free to reach out. I’d love to hear from you!
         </p>
-        <div>
+        <div class="address">
             <img src="Assets/Let's%20contact/pngwing.com%20(5).png" width="20">
             <p>Rathnapura, Sri lanka</p>
         </div>
-        <div>
+        <div class="email">
             <img src="Assets/Let's%20contact/4202011_email_gmail_mail_logo_social_icon.png" width="20">
             <p>sanjeewalahiru057@gmail.com</p>
         </div>
-        <div>
+        <div class="phone">
             <img src="Assets/Let's%20contact/%5BCITYPNG.COM%5DHD%20Green%20Round%20Circle%20Phone%20Icon%20Transparent%20PNG%20-%202000x2000.png" width="20">
             <p>+94 71 906 8149</p>
         </div>
     </div>
 
     <!--Right side-->
-    <div>
-        <div>
+    <div class="right">
+        <div class="name">
             <input type="text" placeholder="Name">
         </div>
-        <div>
+        <div class="email">
             <input type="email" placeholder="Email">
         </div>
-        <div>
+        <div class="message">
             <textarea placeholder="Message"></textarea>
         </div>
         <button>Send Message</button>
@@ -303,7 +305,7 @@
 <footer>
     <h3>Contact with me</h3>
     <!--left side-->
-    <div>
+    <div class="left">
         <h3>Let's Contact</h3>
         <p>
             Feel free to reach out for collaborations or just a friendly hello
@@ -315,12 +317,12 @@
     </div>
 
     <!--Right side-->
-    <div>
+    <div class="right">
         <div>
-            <a href=""><img src="Assets/Footer/linkedin.png" width="20"></a>
-            <a href=""><img src="Assets/Footer/github.png" width="20"></a>
-            <a href=""><img src="Assets/Footer/facebook.png" width="20"></a>
-            <a href=""><img src="Assets/Footer/instagram.png" width="20"></a>
+            <a class="linkedin" href=""><img src="Assets/Footer/linkedin.png" width="20"></a>
+            <a class="github" href=""><img src="Assets/Footer/github.png" width="20"></a>
+            <a class="facebook" href=""><img src="Assets/Footer/facebook.png" width="20"></a>
+            <a class="instagram" href=""><img src="Assets/Footer/instagram.png" width="20"></a>
         </div>
         <h4>Design by Lahiru</h4>
     </div>
