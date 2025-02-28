@@ -49,8 +49,10 @@ header nav div a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4% 10% 6% 10%;
+    padding: 1% 0 6% 0;
     background-color: #1a1a1a;
+    width: 100vw;
+    height: 100vh;
 }
 
 #Home .left {
@@ -61,7 +63,7 @@ header nav div a:hover {
 
 #Home .left .desc  p {
     color: #def1e3;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     width: 250%;
     padding-bottom: 15%;
@@ -83,7 +85,7 @@ header nav div a:hover {
 }
 
 #Home .left .img a img {
-    width: 20%;
+    width: 10%;
     margin-right: 2%;
     transition: transform 0.3s;
 }
@@ -93,11 +95,74 @@ header nav div a:hover {
 }
 
 #Home .right img {
-    width: 70%;
+    width: 65%;
     border-radius: 10px;
     border: solid 1px blue;
 }
 
+/* About Me Section */
+#About {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 10% 10% 10%;
+    background-color: #1a1a1a;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#About .left img {
+    width: 350px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#About .right {
+    padding-left: 15%;
+}
+
+#About .desc {
+    margin-bottom: 10%;
+}
+
+#About .title {
+    color: #4CAF50;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#About .name {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#About .desc p {
+    color: #def1e3;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+#About .img a {
+    text-decoration: none;
+}
+
+#About .img img {
+    width: 8%;
+    height: auto;
+    transition: transform 0.3s;
+    margin-right: 2%;
+}
+
+#About .img img:hover {
+    transform: scale(1.1);
+}
 
 
 
