@@ -415,3 +415,114 @@ section#Skills > div.content > div > div.secondContent > div > h4 {
 .imgFour > h4 {
     margin-top: 20%;
 }
+
+/*Contact section*/
+
+section#Contact {
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+section#Contact > div.topic {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: white;
+}
+
+section#Contact > div.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+section#Contact > div.content > div {
+    border: 1px solid black;
+}
+
+section#Contact > div.content > div.left {
+    margin: 5% 8% 5% 20%;
+}
+
+section#Contact > div.content > div.right {
+    margin: 5% 20% 5% 8%;
+}
+
+section#Contact > div.topic > h2 {
+    font-size: 3rem;
+    /*color: white;*/
+}
+
+section#Contact > div.content > div.left > div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 3% 5% 5% 5%;
+}
+
+section#Contact > div.content > div.left > div > img {
+    width: 5%;
+    margin-right: 3%;
+}
+
+section#Contact > div.content > div.left > div > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+section#Contact > div.content > div.left > div > p {
+    color: #def1e3;
+}
+
+section#Contact > div.content > div.left > h3 {
+    font-size: 2rem;
+    margin: 5% 5%;
+    color: #acacda;
+}
+
+section#Contact > div.content > div.left > p {
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 10% 5% 5% 5%;
+    color: #ffffff;
+}
+
+section#Contact > div.content > div.left > div > p {
+    font-size: 1.2rem;
+}
+
+section#Contact > div.content > div.right > div {
+    margin: 5% 5% 8% 5%;
+}
+
+section#Contact > div.content > div.right > div > input {
+    width: 90%;
+    height: 6vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid #143640;
+    padding: 3%;
+}
+
+section#Contact > div.content > div.right > div > textarea {
+    width: 90%;
+    height: 20vh;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid #143640;
+    padding: 3%;
+}
+
+section#Contact > div.content > div.right > button {
+    width: 81%;
+    height: 6vh;
+    margin: 5% 5% 8% 5%;
+    border-radius: 5px;
+    font-weight: bold;
+}
