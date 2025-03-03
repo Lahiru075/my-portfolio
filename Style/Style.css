@@ -342,3 +342,76 @@ section#Assignment > div.content > div > div > p {
     color: #def1e3;
 }
 
+/*Skill section*/
+
+section#Skills {
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+section#Skills > div.topic {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+section#Skills > div.content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+section#Skills > div.content > div {
+    border: 1px solid #200471;
+    margin: 2% 8%;
+    background-color: #0F1420;
+    border-radius: 20px;
+}
+
+section#Skills > div.content > div > div.secondContent {
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+
+section#Skills > div.content > div > div.secondContent > div {
+    border: 1px solid #200471;
+    padding: 8%;
+    text-align: center;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+
+}
+
+section#Skills > div.topic > h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+section#Skills > div.content > div > div.secondTopic > h3 {
+    font-size: 1.7rem;
+    margin-left: 3%;
+    margin-top: 3%;
+    color: white;
+}
+
+section#Skills > div.content > div > div.secondContent > div > img {
+    width: 60%;
+}
+
+section#Skills > div.content > div > div.secondContent > div > h4 {
+    color: white;
+}
+
+.imgFour > h4 {
+    margin-top: 20%;
+}
