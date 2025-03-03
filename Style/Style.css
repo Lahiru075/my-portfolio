@@ -232,12 +232,14 @@ section#Education > div.content > article {
 }
 
 section#Education > div.content > article > div.right {
-    border: 1px solid blue;
+    border: 1px solid #090961;
     grid-column: 2/4;
     padding-top: 4%;
     padding-left: 4%;
     padding-bottom: 4%;
-    background-color: #04042b;
+    background: linear-gradient(359deg, rgba(1, 14, 35, 1), rgba(0, 0, 0, 1));
+    -webkit-background: linear-gradient(359deg, rgba(1, 14, 35, 1), rgba(0, 0, 0, 1));
+    -moz-background: linear-gradient(359deg, rgba(1, 14, 35, 1), rgba(0, 0, 0, 1));
     border-radius: 20px;
 }
 
@@ -280,6 +282,63 @@ section#Education > div.content > article > div.right > div > img {
     margin-right: 2%;
 }
 
+/*Assignment section*/
 
+section#Assignment {
+    background-color: #1a1a1a;
+    position: relative;
+}
 
+section#Assignment > div.topic {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: white;
+}
+
+section#Assignment > div.topic > h2 {
+    font-size: 3rem;
+}
+
+section#Assignment > div.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section#Assignment > div.content > div {
+    height: 60vh;
+    background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
+    -webkit-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
+    -moz-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
+    border-radius: 10%;
+    border: 1px solid #200471;
+
+}
+
+section#Assignment > div.content > div.right {
+    text-align: center;
+    margin: 10% 40% 10% 5%;
+}
+
+section#Assignment > div.content > div.left {
+    text-align: center;
+    margin: 10% 5% 10% 40%;
+}
+
+section#Assignment > div.content > div > div > h3 {
+    font-size: 2rem;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    color: #def1e3;
+}
+
+section#Assignment > div.content > div > div > p {
+    margin: 5%;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    color: #def1e3;
+}
 
