@@ -10,10 +10,13 @@ body {
     height: 100vh;
     background-color: #f4f4f4;
     color: #333;
+    position: relative;
 }
 
 /* Header Section */
 header {
+    width: 100vw;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,8 +26,11 @@ header {
 }
 
 header img {
-    height: 4%;
-    width: 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 8%;
 }
 
 header nav div {
@@ -45,124 +51,215 @@ header nav div a:hover {
 }
 
 /* Home Section */
-#Home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 0 6% 0;
+
+section#Home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #1a1a1a;
-    width: 100vw;
-    height: 100vh;
 }
 
-#Home .left {
-    margin-left: 6%;
-    margin-right: 40%;
-    width: 50%;
+section#Home > div {
+    height: 110vh;
+    border: 1px solid black;
 }
 
-#Home .left .desc  p {
+section#Home > div.left {
+    /*border: 1px solid black;*/
+    grid-column: 1/3;
+    position: relative;
+}
+
+section#Home > div.left > div {
+    width: 70%;
+    height: fit-content;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+section#Home > div.left > div > div.desc > p{
+    width: 85%;
     color: #def1e3;
-    font-size: 20px;
     font-weight: bold;
-    width: 250%;
-    padding-bottom: 15%;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
 }
 
-#Home .left .desc .name {
+section#Home > div.left > div > div.desc > h2 {
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+section#Home > div.left > div > div.desc > h2.name {
     color: #ffffff;
-    font-size: 250%;
-    width: 200%;
-    padding-bottom: 1%;
 }
 
-#Home .left .desc .job {
-    color: lightgreen;
-    padding-left: 20%;
-    font-size: 250%;
-    width: 300%;
-    padding-bottom: 15%;
+section#Home > div.left > div > div.desc > h2.job {
+    color: #4CAF50;
+    margin-left: 3rem;
+    margin-bottom: 6%;
 }
 
-#Home .left .img a img {
-    width: 10%;
-    margin-right: 2%;
-    transition: transform 0.3s;
+section#Home > div.left > div > div.img > a >img {
+    width: 6%;
+    padding-right: 1%;
 }
 
-#Home .left .img a img:hover {
-    transform: scale(1.1);
+section#Home > div.right {
+    position: relative;
 }
 
-#Home .right img {
-    width: 65%;
-    border-radius: 10px;
-    border: solid 1px blue;
+section#Home > div.right > img {
+    border: 1px solid purple;
+    border-radius: 5%;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
 /* About Me Section */
-#About {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10% 10% 10% 10%;
-    background-color: #1a1a1a;
-    width: 100vw;
+
+section#About {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section#About > div {
     height: 100vh;
+    background-color: #1a1a1a;
+    border: 1px solid black;
+    position: relative;
 }
 
-
-#About .left img {
-    width: 350px;
-    height: auto;
-    border-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+section#About > div.left > img {
+    width: 55%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 10%;
+    margin: auto;
+    border: 2px solid purple;
+    border-radius: 5%;
 }
 
-#About .right {
-    padding-left: 15%;
+section#About > div.right > div {
+    width: 35rem;
+    height: fit-content;
+    border: 1px solid black;
 }
 
-#About .desc {
-    margin-bottom: 10%;
+section#About > div.right > div > div.desc > p {
+    width: 70%;
 }
 
-#About .title {
-    color: #4CAF50;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#About .name {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#About .desc p {
-    color: #def1e3;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-
-#About .img a {
-    text-decoration: none;
-}
-
-#About .img img {
+section#About > div.right > div > .img > a >img {
     width: 8%;
-    height: auto;
-    transition: transform 0.3s;
     margin-right: 2%;
 }
 
-#About .img img:hover {
-    transform: scale(1.1);
+section#About > div.right > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
+
+section#About > div.right > div > div.desc > h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 3%;
+}
+
+section#About > div.right > div > div.desc > h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 3%;
+}
+
+section#About > div.right > div > div.desc > p {
+    width: 85%;
+    color: #def1e3;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+
+/* About Me Section */
+/*#About {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 10% 10% 10% 10%;*/
+/*    background-color: #1a1a1a;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*}*/
+
+
+/*#About .left img {*/
+/*    width: 350px;*/
+/*    height: auto;*/
+/*    border-radius: 10%;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/*#About .right {*/
+/*    padding-left: 15%;*/
+/*}*/
+
+/*#About .desc {*/
+/*    margin-bottom: 10%;*/
+/*}*/
+
+/*#About .title {*/
+/*    color: #4CAF50;*/
+/*    font-size: 36px;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*#About .name {*/
+/*    color: #ffffff;*/
+/*    font-size: 24px;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*#About .desc p {*/
+/*    color: #def1e3;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.6;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+
+/*#About .img a {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*#About .img img {*/
+/*    width: 8%;*/
+/*    height: auto;*/
+/*    transition: transform 0.3s;*/
+/*    margin-right: 2%;*/
+/*}*/
+
+/*#About .img img:hover {*/
+/*    transform: scale(1.1);*/
+/*}*/
 
 
 
