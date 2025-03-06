@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1% 3%;
-    background-color: #100808;
+    background-color: #090810;
     color: #00ff2c;
 }
 
@@ -55,7 +55,7 @@ header nav div a:hover {
 section#Home {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #100808;
+    background-color: #090810;
 }
 
 section#Home > div {
@@ -134,8 +134,7 @@ section#About {
 
 section#About > div {
     height: 100vh;
-    background-color: #130a0a;
-    /*border: 1px solid black;*/
+    background-color: #080c10;
     position: relative;
 }
 
