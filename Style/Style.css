@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1% 3%;
-    background-color: #1a1a1a;
+    background-color: #100808;
     color: #00ff2c;
 }
 
@@ -55,12 +55,12 @@ header nav div a:hover {
 section#Home {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #1a1a1a;
+    background-color: #100808;
 }
 
 section#Home > div {
     height: 110vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 section#Home > div.left {
@@ -72,7 +72,7 @@ section#Home > div.left {
 section#Home > div.left > div {
     width: 70%;
     height: fit-content;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -134,8 +134,8 @@ section#About {
 
 section#About > div {
     height: 100vh;
-    background-color: #1a1a1a;
-    border: 1px solid black;
+    background-color: #130a0a;
+    /*border: 1px solid black;*/
     position: relative;
 }
 
@@ -152,9 +152,9 @@ section#About > div.left > img {
 }
 
 section#About > div.right > div {
-    width: 35rem;
+    width: fit-content;
     height: fit-content;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 section#About > div.right > div > div.desc > p {
@@ -200,7 +200,7 @@ section#About > div.right > div > div.desc > p {
 /* Education Section */
 
 section#Education {
-    background-color: #1a1a1a;
+    background-color: #100808;
     position: relative;
 }
 
@@ -210,7 +210,7 @@ section#Education > div.topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     color: white;
 }
 
@@ -228,7 +228,7 @@ section#Education > div.content > article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 3% 15% 1% 5%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 section#Education > div.content > article > div.right {
@@ -282,10 +282,14 @@ section#Education > div.content > article > div.right > div > img {
     margin-right: 2%;
 }
 
+section#Education > div.content > article.articleThree {
+    margin-bottom: 5%;
+}
+
 /*Assignment section*/
 
 section#Assignment {
-    background-color: #1a1a1a;
+    background-color: #130a0a;
     position: relative;
 }
 
@@ -295,7 +299,7 @@ section#Assignment > div.topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     color: white;
 }
 
@@ -310,7 +314,7 @@ section#Assignment > div.content {
 
 section#Assignment > div.content > div {
     height: 60vh;
-    background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
+    background: linear-gradient(360deg, rgb(10, 23, 46), rgb(0, 0, 0));
     -webkit-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
     -moz-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
     border-radius: 10%;
@@ -338,14 +342,90 @@ section#Assignment > div.content > div > div > h3 {
 section#Assignment > div.content > div > div > p {
     margin: 5%;
     font-size: 1.3rem;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     color: #def1e3;
+}
+
+/* Project Section */
+section#Project {
+    background-color: #100808;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+section#Project h2 {
+    font-size: 3rem;
+    margin-bottom: 2%;
+    color: #ffffff;
+}
+
+section#Project > div {
+    background: linear-gradient(16deg, rgba(11, 24, 55, 1), rgba(0, 0, 0, 1));
+    -webkit-background: linear-gradient(16deg, rgba(11, 24, 55, 1), rgba(0, 0, 0, 1));
+    -moz-background: linear-gradient(16deg, rgba(11, 24, 55, 1), rgba(0, 0, 0, 1));
+    border-radius: 20px;
+    padding: 3%;
+    margin: 2% 0;
+    border: 1px solid rgba(18, 69, 106, 0.46);
+    box-shadow: 8px 8px 15px 5px rgb(0, 0, 0);
+}
+
+section#Project > div > h2 {
+    font-size: 2rem;
+    margin-bottom: 2%;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+section#Project > div > p {
+    font-size: 1.2rem;
+    color: #def1e3;
+    text-align: left;
+    margin: 5% 5% 2% 10%;
+}
+
+section#Project > div > .list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+section#Project > div > .list ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+section#Project > div > .list ul li {
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+section#Project > div > img {
+    width: 80px;
+    margin: 1%;
+}
+
+section#Project > div > button {
+    background-color: rgba(23, 133, 20, 0.2);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section#Project > div > button:hover {
+    background-color: #45a049;
 }
 
 /*Skill section*/
 
 section#Skills {
-    background-color: #1a1a1a;
+    background-color: #130a0a;
     position: relative;
 }
 
@@ -355,7 +435,7 @@ section#Skills > div.topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 section#Skills > div.content {
@@ -412,6 +492,10 @@ section#Skills > div.content > div > div.secondContent > div > h4 {
     color: white;
 }
 
+section#Skills > div.content > div.tools {
+    margin-bottom: 5%;
+}
+
 .imgFour > h4 {
     margin-top: 20%;
 }
@@ -419,7 +503,7 @@ section#Skills > div.content > div > div.secondContent > div > h4 {
 /*Contact section*/
 
 section#Contact {
-    background-color: #1a1a1a;
+    background-color: #100808;
     position: relative;
 }
 
@@ -429,7 +513,7 @@ section#Contact > div.topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     color: white;
 }
 
@@ -440,7 +524,7 @@ section#Contact > div.content {
 }
 
 section#Contact > div.content > div {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 section#Contact > div.content > div.left {
@@ -528,6 +612,8 @@ section#Contact > div.content > div.right > button {
     border: 2px solid #143640;
 }
 
+/* footer */
+
 footer {
     background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
     -webkit-background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
@@ -558,11 +644,11 @@ footer > div.content > div {
 }
 
 footer > div.content > div.left {
-    margin: 5% 8% 5% 15%;
+    margin: 2% 8% 2% 15%;
 }
 
 footer > div.content > div.right {
-    margin: 5% 15% 5% 8%;
+    margin: 2% 15% 2% 8%;
     position: relative;
 }
 
@@ -600,17 +686,18 @@ footer > div.content > div.left >  div.email > a {
 
 footer > div.content > div.right > div > a > img {
     width: 25px;
-    margin-left: 16%;
+    margin-left: 12%;
 }
 
 footer > div.content > div.right > div.name >h4 {
     color: white;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 15px;
+    width: 125%;
 }
 
 footer > div.content > div.right > div.image {
-    width: 60%;
+    width: 55%;
     height: fit-content;
     /*border: 1px solid black;*/
     position: absolute;
@@ -624,7 +711,7 @@ footer > div.content > div.right > div.name {
     height: fit-content;
     /*border: 1px solid black;*/
     position: absolute;
-    right: 0;
+    right: 5%;
     bottom: 30%;
     margin: auto;
 }
