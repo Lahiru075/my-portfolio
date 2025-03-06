@@ -525,4 +525,106 @@ section#Contact > div.content > div.right > button {
     margin: 5% 5% 8% 5%;
     border-radius: 5px;
     font-weight: bold;
+    border: 2px solid #143640;
+}
+
+footer {
+    background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
+    -webkit-background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
+    -moz-background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
+}
+
+footer > div.topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+footer > div.topic > h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer > div.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+footer > div.content > div {
+    /*border: 1px solid black;*/
+}
+
+footer > div.content > div.left {
+    margin: 5% 8% 5% 15%;
+}
+
+footer > div.content > div.right {
+    margin: 5% 15% 5% 8%;
+    position: relative;
+}
+
+footer > div.content > div.left >  h3 {
+    color: white;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    margin-bottom: 4%;
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+footer > div.content > div.left >  p {
+    color: white;
+    margin-bottom: 4%;
+    font-size: 1rem;
+}
+
+footer > div.content > div.left >  div.email {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 2%;
+}
+
+footer > div.content > div.left >  div.email > img {
+    margin-right: 2%;
+}
+
+footer > div.content > div.left >  div.email > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+footer > div.content > div.right > div > a > img {
+    width: 25px;
+    margin-left: 16%;
+}
+
+footer > div.content > div.right > div.name >h4 {
+    color: white;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+footer > div.content > div.right > div.image {
+    width: 60%;
+    height: fit-content;
+    /*border: 1px solid black;*/
+    position: absolute;
+    right: 0;
+    top: 5%;
+    margin: auto;
+}
+
+footer > div.content > div.right > div.name {
+    width: 25%;
+    height: fit-content;
+    /*border: 1px solid black;*/
+    position: absolute;
+    right: 0;
+    bottom: 30%;
+    margin: auto;
 }
