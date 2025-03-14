@@ -9,23 +9,10 @@ body {
     position: relative;
 }
 
-/* Header Section */
-/*header {*/
-/*    width: 100vw;*/
-/*    height: 10vh;*/
-/*    position: fixed;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    padding: 1% 3%;*/
-/*    background-color: #090810;*/
-/*    color: #00ff2c;*/
-/*    opacity: 0.9;*/
-/*}*/
 
 header {
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -64,7 +51,6 @@ header nav div a:hover {
 }
 
 /* Home Section */
-
 section#Home {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -738,4 +724,164 @@ footer > div.content > div.right > div.name {
     right: 5%;
     bottom: 30%;
     margin: auto;
+}
+
+/* Laptop size */
+@media screen and (max-width: 1024px) {
+    /* header section */
+    header {
+        height: 7vh;
+        padding: 1% 2%;
+    }
+    header img {
+        width: 7%;
+    }
+    header nav div {
+        gap: 1.5rem;
+    }
+    header nav div a {
+        font-size: 95%;
+    }
+
+    /* home section */
+    /*section#Home > div {*/
+    /*    height: 100vh;*/
+    /*}*/
+    /*section#Home > div.left > div {*/
+    /*    width: 80%;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > h2 {*/
+    /*    font-size: 2.5rem;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > p {*/
+    /*    font-size: 1rem;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > h2.job {*/
+    /*    margin-left: 2rem;*/
+    /*}*/
+    /*section#Home > div.left > div > div.img > a > img {*/
+    /*    width: 5%;*/
+    /*}*/
+    /*section#Home > div.right > img {*/
+    /*    width: 60%;*/
+    /*}*/
+}
+
+/* Tablet size */
+@media screen and (max-width: 768px) {
+    /* header section */
+    header {
+        height: 6vh;
+        padding: 1% 2%;
+    }
+    header img {
+        width: 10%;
+        margin: 0 auto;
+    }
+    header nav div {
+        gap: 1rem;
+        width: 100%;
+    }
+    header nav div a {
+        font-size: 70%;
+    }
+
+    /* home section */
+    /*section#Home {*/
+    /*    grid-template-columns: 1fr;*/
+    /*}*/
+    /*section#Home > div {*/
+    /*    height: auto;*/
+    /*}*/
+    /*section#Home > div.left {*/
+    /*    grid-column: 1/2;*/
+    /*    padding: 3rem 1rem 1rem 6rem;*/
+    /*}*/
+    /*section#Home > div.left > div {*/
+    /*    width: 90%;*/
+    /*    position: static;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > h2 {*/
+    /*    font-size: 1.5rem;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > p {*/
+    /*    font-size: 0.9rem;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > h2.job {*/
+    /*    margin-left: 1.5rem;*/
+    /*    margin-bottom: 3%;*/
+    /*}*/
+
+    /*section#Home > div.left > div > div.img > a > img {*/
+    /*    width: 4%;*/
+    /*}*/
+    /*section#Home > div.right {*/
+    /*    padding: 2rem 0;*/
+    /*}*/
+    /*section#Home > div.right > img {*/
+    /*    width: 35%;*/
+    /*    position: static;*/
+    /*    display: block;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+}
+
+/* Mobile size */
+@media screen and (max-width: 480px) {
+    /* header section */
+    header {
+        height: 5vh;
+        padding: 0.5% 0.5%;
+    }
+    header img {
+        width: 8%;
+        margin: 0 auto;
+    }
+    header nav div {
+        gap: 0.4rem;
+    }
+    header nav div a {
+        font-size: 50%;
+    }
+
+    /* home section */
+    /*section#Home {*/
+    /*    grid-template-columns: 1fr;*/
+    /*}*/
+    /*section#Home > div {*/
+    /*    height: auto;*/
+    /*}*/
+    /*section#Home > div.left {*/
+    /*    grid-column: 1/2;*/
+    /*    padding:  3rem 1rem 1rem 6rem;*/
+    /*}*/
+    /*section#Home > div.left > div {*/
+    /*    width: 95%;*/
+    /*    position: static;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > h2 {*/
+    /*    font-size: 1rem;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > p {*/
+    /*    font-size: 0.6rem;*/
+    /*    width: 90%;*/
+    /*}*/
+    /*section#Home > div.left > div > div.desc > h2.job {*/
+    /*    margin-left: 1rem;*/
+    /*    margin-bottom: 4%;*/
+    /*}*/
+    /*section#Home > div.left > div > div.img > a > img {*/
+    /*    width: 4%;*/
+    /*}*/
+    /*section#Home > div.right {*/
+    /*    padding: 1.5rem 0;*/
+    /*}*/
+    /*section#Home > div.right > img {*/
+    /*    width: 35%;*/
+    /*    position: static;*/
+    /*    display: block;*/
+    /*    margin: 0 auto;*/
+    /*}*/
 }
