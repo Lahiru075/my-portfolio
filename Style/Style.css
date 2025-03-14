@@ -744,27 +744,27 @@ footer > div.content > div.right > div.name {
     }
 
     /* home section */
-    /*section#Home > div {*/
-    /*    height: 100vh;*/
-    /*}*/
-    /*section#Home > div.left > div {*/
-    /*    width: 80%;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > h2 {*/
-    /*    font-size: 2.5rem;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > p {*/
-    /*    font-size: 1rem;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > h2.job {*/
-    /*    margin-left: 2rem;*/
-    /*}*/
-    /*section#Home > div.left > div > div.img > a > img {*/
-    /*    width: 5%;*/
-    /*}*/
-    /*section#Home > div.right > img {*/
-    /*    width: 60%;*/
-    /*}*/
+    section#Home > div {
+        height: 100vh;
+    }
+    section#Home > div.left > div {
+        width: 80%;
+    }
+    section#Home > div.left > div > div.desc > h2 {
+        font-size: 2.5rem;
+    }
+    section#Home > div.left > div > div.desc > p {
+        font-size: 1rem;
+    }
+    section#Home > div.left > div > div.desc > h2.job {
+        margin-left: 2rem;
+    }
+    section#Home > div.left > div > div.img > a > img {
+        width: 5%;
+    }
+    section#Home > div.right > img {
+        width: 60%;
+    }
 }
 
 /* Tablet size */
@@ -787,44 +787,44 @@ footer > div.content > div.right > div.name {
     }
 
     /* home section */
-    /*section#Home {*/
-    /*    grid-template-columns: 1fr;*/
-    /*}*/
-    /*section#Home > div {*/
-    /*    height: auto;*/
-    /*}*/
-    /*section#Home > div.left {*/
-    /*    grid-column: 1/2;*/
-    /*    padding: 3rem 1rem 1rem 6rem;*/
-    /*}*/
-    /*section#Home > div.left > div {*/
-    /*    width: 90%;*/
-    /*    position: static;*/
-    /*    margin: 0 auto;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > h2 {*/
-    /*    font-size: 1.5rem;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > p {*/
-    /*    font-size: 0.9rem;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > h2.job {*/
-    /*    margin-left: 1.5rem;*/
-    /*    margin-bottom: 3%;*/
-    /*}*/
+    section#Home {
+        grid-template-columns: 1fr;
+    }
+    section#Home > div {
+        height: auto;
+    }
+    section#Home > div.left {
+        grid-column: 1/2;
+        padding: 3rem 1rem 1rem 6rem;
+    }
+    section#Home > div.left > div {
+        width: 90%;
+        position: static;
+        margin: 0 auto;
+    }
+    section#Home > div.left > div > div.desc > h2 {
+        font-size: 1.5rem;
+    }
+    section#Home > div.left > div > div.desc > p {
+        font-size: 0.9rem;
+    }
+    section#Home > div.left > div > div.desc > h2.job {
+        margin-left: 1.5rem;
+        margin-bottom: 3%;
+    }
 
-    /*section#Home > div.left > div > div.img > a > img {*/
-    /*    width: 4%;*/
-    /*}*/
-    /*section#Home > div.right {*/
-    /*    padding: 2rem 0;*/
-    /*}*/
-    /*section#Home > div.right > img {*/
-    /*    width: 35%;*/
-    /*    position: static;*/
-    /*    display: block;*/
-    /*    margin: 0 auto;*/
-    /*}*/
+    section#Home > div.left > div > div.img > a > img {
+        width: 4%;
+    }
+    section#Home > div.right {
+        padding: 2rem 0;
+    }
+    section#Home > div.right > img {
+        width: 35%;
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /* Mobile size */
@@ -846,42 +846,42 @@ footer > div.content > div.right > div.name {
     }
 
     /* home section */
-    /*section#Home {*/
-    /*    grid-template-columns: 1fr;*/
-    /*}*/
-    /*section#Home > div {*/
-    /*    height: auto;*/
-    /*}*/
-    /*section#Home > div.left {*/
-    /*    grid-column: 1/2;*/
-    /*    padding:  3rem 1rem 1rem 6rem;*/
-    /*}*/
-    /*section#Home > div.left > div {*/
-    /*    width: 95%;*/
-    /*    position: static;*/
-    /*    margin: 0 auto;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > h2 {*/
-    /*    font-size: 1rem;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > p {*/
-    /*    font-size: 0.6rem;*/
-    /*    width: 90%;*/
-    /*}*/
-    /*section#Home > div.left > div > div.desc > h2.job {*/
-    /*    margin-left: 1rem;*/
-    /*    margin-bottom: 4%;*/
-    /*}*/
-    /*section#Home > div.left > div > div.img > a > img {*/
-    /*    width: 4%;*/
-    /*}*/
-    /*section#Home > div.right {*/
-    /*    padding: 1.5rem 0;*/
-    /*}*/
-    /*section#Home > div.right > img {*/
-    /*    width: 35%;*/
-    /*    position: static;*/
-    /*    display: block;*/
-    /*    margin: 0 auto;*/
-    /*}*/
+    section#Home {
+        grid-template-columns: 1fr;
+    }
+    section#Home > div {
+        height: auto;
+    }
+    section#Home > div.left {
+        grid-column: 1/2;
+        padding:  3rem 1rem 1rem 6rem;
+    }
+    section#Home > div.left > div {
+        width: 95%;
+        position: static;
+        margin: 0 auto;
+    }
+    section#Home > div.left > div > div.desc > h2 {
+        font-size: 1rem;
+    }
+    section#Home > div.left > div > div.desc > p {
+        font-size: 0.6rem;
+        width: 90%;
+    }
+    section#Home > div.left > div > div.desc > h2.job {
+        margin-left: 1rem;
+        margin-bottom: 4%;
+    }
+    section#Home > div.left > div > div.img > a > img {
+        width: 4%;
+    }
+    section#Home > div.right {
+        padding: 1.5rem 0;
+    }
+    section#Home > div.right > img {
+        width: 35%;
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
 }
