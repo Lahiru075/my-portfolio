@@ -784,6 +784,33 @@ footer > div.content > div.right > div.name {
         width: 90%;
         font-size: 1.1rem;
     }
+
+    /* education section */
+
+    section#Education > div.topic > h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Education > div.content > article {
+        margin: 3% 10% 1% 3%;
+    }
+
+    section#Education > div.content > article > div.right > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Education > div.content > article > div.right > div > h3 {
+        font-size: 1.8rem;
+    }
+
+    section#Education > div.content > article > div.left > img {
+        width: 35%;
+    }
+
+    section#Education > div.content > article > div.right > p {
+        font-size: 1.1rem;
+        width: 95%;
+    }
 }
 
 /* Tablet size */
@@ -880,6 +907,46 @@ footer > div.content > div.right > div.name {
     section#About > div.right > div > .img > a > img {
         width: 6%;
     }
+
+    /* education section */
+
+    section#Education > div.topic {
+        height: 15vh;
+    }
+
+    section#Education > div.topic > h2 {
+        font-size: 2rem;
+    }
+
+    section#Education > div.content > article {
+        grid-template-columns: 1fr; /* Stack columns */
+        margin: 2% 5%;
+    }
+
+    section#Education > div.content > article > div.right {
+        grid-column: 1; /* Reset grid column */
+        padding: 3%;
+    }
+
+    section#Education > div.content > article > div.left {
+        margin-bottom: 2%;
+    }
+
+    section#Education > div.content > article > div.left > img {
+        width: 15%;
+    }
+
+    section#Education > div.content > article > div.right > div > img {
+        width: 8%;
+    }
+
+    section#Education > div.content > article > div.right > h2 {
+        font-size: 1.6rem;
+    }
+
+    section#Education > div.content > article > div.right > div > h3 {
+        font-size: 1.6rem;
+    }
 }
 
 /* Mobile size */
@@ -962,5 +1029,49 @@ footer > div.content > div.right > div.name {
     section#About > div.right > div > .img > a > img {
         width: 8%;
         margin-right: 1%;
+    }
+
+    /* education section */
+
+    section#Education > div.topic {
+        height: 12vh;
+    }
+
+    section#Education > div.topic > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Education > div.content > article {
+        margin: 2% 3%;
+    }
+
+    section#Education > div.content > article > div.right {
+        padding: 4%;
+    }
+
+    section#Education > div.content > article > div.right > h2 {
+        font-size: 1.4rem;
+    }
+
+    section#Education > div.content > article > div.right > div > h3 {
+        font-size: 1.4rem;
+    }
+
+    section#Education > div.content > article > div.right > p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    section#Education > div.content > article > div.left > img {
+        width: 15%;
+    }
+
+    section#Education > div.content > article > div.right > div > img {
+        width: 10%;
+        margin-right: 1%;
+    }
+
+    section#Education > div.content > article > div.right > div {
+        margin-bottom: 3%;
     }
 }
