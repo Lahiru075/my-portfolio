@@ -863,6 +863,53 @@ footer > div.content > div.right > div.name {
         transform: scale(1.05);
     }
 
+    /* project section */
+
+    section#Project {
+        padding: 4% 8%;
+    }
+
+    section#Project h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Project > div {
+        padding: 2.5%;
+        margin: 1.5% 0;
+    }
+
+    section#Project > div > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Project > div > p {
+        font-size: 1.1rem;
+        margin: 4% 4% 2% 8%;
+    }
+
+    section#Project > div > .list ul {
+        gap: 0.8rem;
+    }
+
+    section#Project > div > .list ul li {
+        padding: 0.8rem;
+    }
+
+    section#Project > div > img {
+        width: 70px;
+    }
+
+    section#Project > div > button {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    section#Project > button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.8rem;
+    }
+
 }
 
 /* Tablet size */
@@ -1031,6 +1078,60 @@ footer > div.content > div.right > div.name {
     section#Assignment > div.content > div:hover {
         transform: scale(1.03);
     }
+
+    /* project section */
+
+    section#Project {
+        padding: 3% 5%;
+    }
+
+    section#Project h2 {
+        font-size: 2rem;
+        margin-bottom: 3% ;
+    }
+
+    section#Project > div {
+        padding: 2%;
+        margin: 1% 2%;
+        box-shadow: 5px 5px 10px 3px rgb(0, 0, 0);
+    }
+
+    section#Project > div > h2 {
+        font-size: 1.6rem;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    section#Project > div > p {
+        font-size: 1rem;
+        margin: 3% 3% 3% 5%;
+    }
+
+    section#Project > div > .list {
+        margin: 2% 5%;
+    }
+
+    section#Project > div > .list ul li {
+        padding: 0.7rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    section#Project > div > img {
+        width: 60px;
+    }
+
+    section#Project > div > button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    section#Project > button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        margin-top: 2%;
+    }
 }
 
 /* Mobile size */
@@ -1190,5 +1291,50 @@ footer > div.content > div.right > div.name {
 
     section#Assignment > div.content > div:hover {
         transform: scale(1.02);
+    }
+
+    /* project section */
+
+    section#Project {
+        padding: 2% 3%;
+    }
+
+    section#Project h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Project > div {
+        padding: 1.5%;
+        margin: 1% 2%;
+        border-radius: 15px;
+    }
+
+    section#Project > div > h2 {
+        font-size: 1.4rem;
+    }
+
+    section#Project > div > p {
+        font-size: 0.9rem;
+        margin: 2% 2% 1% 3%;
+    }
+
+    section#Project > div > .list ul li {
+        padding: 0.6rem;
+        width: 90%;
+    }
+
+    section#Project > div > img {
+        width: 50px;
+    }
+
+    section#Project > div > button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    section#Project > button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
     }
 }
