@@ -289,6 +289,7 @@ section#Education > div.content > article.articleThree {
 section#Assignment {
     background-color: #130a0a;
     position: relative;
+    overflow: hidden;
 }
 
 section#Assignment > div.topic {
@@ -297,8 +298,9 @@ section#Assignment > div.topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid black;*/
     color: #c5add1;
+    position: relative;
+    z-index: 1;
 }
 
 section#Assignment > div.topic > h2 {
@@ -307,30 +309,30 @@ section#Assignment > div.topic > h2 {
 
 section#Assignment > div.content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4%;
+    width: 100%;
+    animation-name: slideLeft;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 section#Assignment > div.content > div {
+    width: 25vw;
     height: 60vh;
     background: linear-gradient(360deg, rgb(10, 23, 46), rgb(0, 0, 0));
     -webkit-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
     -moz-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
     border-radius: 10%;
     border: 1px solid #200471;
-
-}
-
-section#Assignment > div.content > div.right {
-    text-align: center;
-    margin: 10% 40% 10% 5%;
-}
-
-section#Assignment > div.content > div.left {
-    text-align: center;
-    margin: 10% 5% 10% 40%;
+    padding: 5%;
+    margin: 0 15% 15% 15%;
 }
 
 section#Assignment > div.content > div > div > h3 {
+    display: flex;
+    justify-content: center;
     font-size: 2rem;
     margin-top: 10%;
     margin-bottom: 8%;
@@ -338,11 +340,23 @@ section#Assignment > div.content > div > div > h3 {
 }
 
 section#Assignment > div.content > div > div > p {
+    display: flex;
+    justify-content: center;
     margin: 5%;
     font-size: 1.3rem;
-    /*border: 1px solid black;*/
     color: #def1e3;
 }
+
+section#Assignment > div.content > div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+
+section#Assignment > div.content:hover {
+    animation-play-state: paused;
+}
+
 
 /* Project Section */
 section#Project {
@@ -726,6 +740,15 @@ footer > div.content > div.right > div.name {
     margin: auto;
 }
 
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
 /* Laptop size */
 @media screen and (max-width: 1024px) {
     /* header section */
@@ -811,6 +834,35 @@ footer > div.content > div.right > div.name {
         font-size: 1.1rem;
         width: 95%;
     }
+
+    /* assignment section */
+
+    section#Assignment > div.topic > h2 {
+        font-size: 2.2rem; /
+    }
+
+    section#Assignment > div.content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3%;
+    }
+
+    section#Assignment > div.content > div {
+        width: 30vw;
+        height: 50vh;
+    }
+
+    section#Assignment > div.content > div > div > h3 {
+        font-size: 1.8rem;
+    }
+
+    section#Assignment > div.content > div > div > p {
+        font-size: 1.2rem;
+    }
+
+    section#Assignment > div.content > div:hover {
+        transform: scale(1.05);
+    }
+
 }
 
 /* Tablet size */
@@ -947,6 +999,38 @@ footer > div.content > div.right > div.name {
     section#Education > div.content > article > div.right > div > h3 {
         font-size: 1.6rem;
     }
+
+    /* assignment section */
+
+    section#Assignment > div.topic {
+        height: 15vh;
+    }
+
+    section#Assignment > div.topic > h2 {
+        font-size: 2rem;
+    }
+
+    section#Assignment > div.content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5%;
+    }
+
+    section#Assignment > div.content > div {
+        width: 40vw;
+        height: 45vh;
+    }
+
+    section#Assignment > div.content > div > div > h3 {
+        font-size: 1.6rem;
+    }
+
+    section#Assignment > div.content > div > div > p {
+        font-size: 1.1rem;
+    }
+
+    section#Assignment > div.content > div:hover {
+        transform: scale(1.03);
+    }
 }
 
 /* Mobile size */
@@ -1073,5 +1157,38 @@ footer > div.content > div.right > div.name {
 
     section#Education > div.content > article > div.right > div {
         margin-bottom: 3%;
+    }
+
+    /* assignment section */
+
+    section#Assignment > div.topic {
+        height: 12vh;
+    }
+
+    section#Assignment > div.topic > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Assignment > div.content {
+        grid-template-columns: 1fr;
+        gap: 0.5%;
+        margin: 0;
+    }
+
+    section#Assignment > div.content > div {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    section#Assignment > div.content > div > div > h3 {
+        font-size: 1.5rem;
+    }
+
+    section#Assignment > div.content > div > div > p {
+        font-size: 1rem;
+    }
+
+    section#Assignment > div.content > div:hover {
+        transform: scale(1.02);
     }
 }
