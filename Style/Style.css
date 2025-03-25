@@ -765,6 +765,25 @@ footer > div.content > div.right > div.name {
     section#Home > div.right > img {
         width: 60%;
     }
+
+    /* about me section */
+    section#About > div.left > img {
+        width: 65%;
+        left: 5%;
+    }
+
+    section#About > div.right > div > div.desc > h2 {
+        font-size: 2.5rem;
+    }
+
+    section#About > div.right > div > div.desc > h4 {
+        font-size: 1.8rem;
+    }
+
+    section#About > div.right > div > div.desc > p {
+        width: 90%;
+        font-size: 1.1rem;
+    }
 }
 
 /* Tablet size */
@@ -825,6 +844,42 @@ footer > div.content > div.right > div.name {
         display: block;
         margin: 0 auto;
     }
+
+    /* about me section */
+    section#About {
+        grid-template-columns: 1fr; /* Stack columns */
+        height: auto;
+    }
+
+    section#About > div {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    section#About > div.left > img {
+        width: 70%;
+        position: relative;
+        display: block;
+        margin: 20px auto;
+        left: 0;
+    }
+
+    section#About > div.right > div {
+        position: relative;
+        padding: 20px;
+    }
+
+    section#About > div.right > div > div.desc > h2 {
+        font-size: 2rem;
+    }
+
+    section#About > div.right > div > div.desc > h4 {
+        font-size: 1.5rem;
+    }
+
+    section#About > div.right > div > .img > a > img {
+        width: 6%;
+    }
 }
 
 /* Mobile size */
@@ -883,5 +938,29 @@ footer > div.content > div.right > div.name {
         position: static;
         display: block;
         margin: 0 auto;
+    }
+
+    /* about me section */
+    section#About > div.left > img {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    section#About > div.right > div > div.desc > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#About > div.right > div > div.desc > h4 {
+        font-size: 1.3rem;
+    }
+
+    section#About > div.right > div > div.desc > p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    section#About > div.right > div > .img > a > img {
+        width: 8%;
+        margin-right: 1%;
     }
 }
