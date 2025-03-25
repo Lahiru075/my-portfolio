@@ -910,6 +910,39 @@ footer > div.content > div.right > div.name {
         font-size: 1.8rem;
     }
 
+    /*Skill section*/
+
+    section#Skills > div.topic {
+        height: 18vh;
+    }
+
+    section#Skills > div.topic > h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Skills > div.content > div {
+        margin: 2% 6%;
+    }
+
+    section#Skills > div.content > div > div.secondContent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    section#Skills > div.content > div > div.secondContent > div {
+        padding: 6%;
+        width: 80%;
+        margin-top: 8%;
+        margin-bottom: 12%;
+    }
+
+    section#Skills > div.content > div > div.secondTopic > h3 {
+        font-size: 1.5rem;
+    }
+
+    section#Skills > div.content > div > div.secondContent > div > img {
+        width: 55%;
+    }
+
 }
 
 /* Tablet size */
@@ -1132,6 +1165,47 @@ footer > div.content > div.right > div.name {
         font-size: 1.5rem;
         margin-top: 2%;
     }
+
+    /*Skill section*/
+
+    section#Skills > div.topic {
+        height: 15vh;
+    }
+
+    section#Skills > div.topic > h2 {
+        font-size: 2rem;
+    }
+
+    section#Skills > div.content > div {
+        padding: 3%;
+        margin: 2% 6%;
+    }
+
+    section#Skills > div.content > div > div.secondContent {
+        grid-template-columns: repeat(2, 1fr); /* column 2කට stack වෙනවා */
+        margin-left: 2%;
+    }
+
+    section#Skills > div.content > div > div.secondContent > div {
+        padding: 5%;
+        width: 85%;
+        margin-right: 3%;
+        margin-top: 6%;
+        margin-bottom: 10%;
+    }
+
+    section#Skills > div.content > div > div.secondTopic > h3 {
+        font-size: 1.4rem;
+        margin-left: 2%;
+    }
+
+    section#Skills > div.content > div > div.secondContent > div > img {
+        width: 50%;
+    }
+
+    .imgFour > h4 {
+        margin-top: 15%;
+    }
 }
 
 /* Mobile size */
@@ -1305,7 +1379,7 @@ footer > div.content > div.right > div.name {
 
     section#Project > div {
         padding: 1.5%;
-        margin: 1% 2%;
+        margin: 1% 6%;
         border-radius: 15px;
     }
 
@@ -1336,5 +1410,52 @@ footer > div.content > div.right > div.name {
         width: 35px;
         height: 35px;
         font-size: 1.2rem;
+    }
+
+    /*Skill section*/
+
+    section#Skills > div.topic {
+        height: 12vh;
+    }
+
+    section#Skills > div.topic > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Skills > div.content > div {
+        padding: 3%;
+        margin: 1% 8%;
+        border-radius: 15px;
+    }
+
+    section#Skills > div.content > div > div.secondContent {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 1%;
+    }
+
+    section#Skills > div.content > div > div.secondContent > div {
+        padding: 4%;
+        width: 90%;
+        margin-right: 0;
+        margin-top: 4%;
+        margin-bottom: 8%;
+    }
+
+    section#Skills > div.content > div > div.secondTopic > h3 {
+        font-size: 1.3rem;
+        margin-left: 1%;
+        margin-top: 2%;
+    }
+
+    section#Skills > div.content > div > div.secondContent > div > img {
+        width: 45%;
+    }
+
+    section#Skills > div.content > div > div.secondContent > div > h4 {
+        font-size: 0.9rem;
+    }
+
+    .imgFour > h4 {
+        margin-top: 10%;
     }
 }
