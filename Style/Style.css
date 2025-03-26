@@ -943,6 +943,52 @@ footer > div.content > div.right > div.name {
         width: 55%;
     }
 
+    /*Contact section*/
+
+    section#Contact > div.topic {
+        height: 18vh;
+    }
+
+    section#Contact > div.topic > h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Contact > div.content > div.left {
+        margin: 5% 6% 5% 15%;
+    }
+
+    section#Contact > div.content > div.right {
+        margin: 5% 15% 5% 6%;
+    }
+
+    section#Contact > div.content > div.left > h3 {
+        font-size: 1.8rem;
+    }
+
+    section#Contact > div.content > div.left > p {
+        font-size: 1.3rem;
+        width: 80%;
+    }
+
+    section#Contact > div.content > div.left > div > img {
+        width: 6%;
+    }
+
+    section#Contact > div.content > div.left > div > a,
+    section#Contact > div.content > div.left > div > p {
+        font-size: 1.1rem;
+    }
+
+    section#Contact > div.content > div.right > div > input,
+    section#Contact > div.content > div.right > div > textarea {
+        width: 85%;
+    }
+
+    section#Contact > div.content > div.right > button {
+        width: 85%;
+    }
+
+
 }
 
 /* Tablet size */
@@ -1182,7 +1228,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Skills > div.content > div > div.secondContent {
-        grid-template-columns: repeat(2, 1fr); /* column 2කට stack වෙනවා */
+        grid-template-columns: repeat(2, 1fr);
         margin-left: 2%;
     }
 
@@ -1200,16 +1246,71 @@ footer > div.content > div.right > div.name {
     }
 
     section#Skills > div.content > div > div.secondContent > div > img {
-        width: 50%;
+        width: 40%;
     }
 
     .imgFour > h4 {
         margin-top: 15%;
     }
+
+    /*Contact section*/
+
+    section#Contact > div.topic {
+        height: 15vh;
+    }
+
+    section#Contact > div.topic > h2 {
+        font-size: 2rem;
+    }
+
+    section#Contact > div.content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#Contact > div.content > div.left {
+        margin: 3% 5%;
+    }
+
+    section#Contact > div.content > div.right {
+        margin: 3% 5%;
+    }
+
+    section#Contact > div.content > div.left > h3 {
+        font-size: 1.6rem;
+        margin: 3% 5%;
+    }
+
+    section#Contact > div.content > div.left > p {
+        font-size: 1.2rem;
+        width: 90%;
+        margin: 5% 5%;
+    }
+
+    section#Contact > div.content > div.left > div > img {
+        width: 4%;
+    }
+
+    section#Contact > div.content > div.left > div > a,
+    section#Contact > div.content > div.left > div > p {
+        font-size: 1rem;
+    }
+
+    section#Contact > div.content > div.right > div > input {
+        height: 5vh;
+    }
+
+    section#Contact > div.content > div.right > div > textarea {
+        height: 12vh;
+    }
+
+    section#Contact > div.content > div.right > button {
+        width: 77%;
+        height: 5vh;
+    }
 }
 
 /* Mobile size */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 426px) {
     /* header section */
     header {
         height: 5vh;
@@ -1458,4 +1559,74 @@ footer > div.content > div.right > div.name {
     .imgFour > h4 {
         margin-top: 10%;
     }
+
+    /*Contact section*/
+
+    section#Contact > div.topic {
+        height: 12vh;
+    }
+
+    section#Contact > div.topic > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Contact > div.content {
+        grid-template-columns: 1fr;
+    }
+
+    section#Contact > div.content > div.left {
+        margin: 2% 3%;
+    }
+
+    section#Contact > div.content > div.right {
+        margin: 2% 3%;
+    }
+
+    section#Contact > div.content > div.left > h3 {
+        font-size: 1.2rem;
+        margin: 2% 3%;
+    }
+
+    section#Contact > div.content > div.left > p {
+        font-size: 0.8rem;
+        width: 95%; /* width එක තව ලොකු කළා */
+        margin: 3% 3%;
+    }
+
+    section#Contact > div.content > div.left > div {
+        margin: 2% 3% 3% 3%;
+    }
+
+    section#Contact > div.content > div.left > div > img {
+        width: 5%;
+        margin-right: 2%;
+    }
+
+    section#Contact > div.content > div.left > div > a,
+    section#Contact > div.content > div.left > div > p {
+        font-size: 0.7rem;
+    }
+
+    section#Contact > div.content > div.right > div {
+        margin: 3% 3% 5% 3%;
+    }
+
+    section#Contact > div.content > div.right > div > input {
+        width: 100%;
+        height: 4.5vh;
+        padding: 2%;
+    }
+
+    section#Contact > div.content > div.right > div > textarea {
+        width: 100%;
+        height: 12vh;
+        padding: 2%;
+    }
+
+    section#Contact > div.content > div.right > button {
+        width: 94%;
+        height: 4.5vh;
+        margin: 3% 0 5% 3%;
+    }
+
 }
