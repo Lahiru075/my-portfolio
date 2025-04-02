@@ -9,7 +9,6 @@ body {
     position: relative;
 }
 
-
 header {
     width: 100%;
     height: 8vh;
@@ -749,8 +748,303 @@ footer > div.content > div.right > div.name {
     }
 }
 
+/* Small Mobile size */
+@media screen and (max-width: 1441px) {
+    /* header section */
+    header {
+        height: 7vh;
+        padding: 1% 2%;
+    }
+
+    header img {
+        width: 7%;
+    }
+
+    header nav div {
+        gap: 1.5rem;
+    }
+
+    header nav div a {
+        font-size: 95%;
+    }
+
+    /* home section */
+    section#Home > div {
+        height: 100vh;
+    }
+
+    section#Home > div.left > div {
+        width: 80%;
+    }
+
+    section#Home > div.left > div > div.desc > h2 {
+        font-size: 2.5rem;
+    }
+
+    section#Home > div.left > div > div.desc > p {
+        font-size: 1rem;
+    }
+
+    section#Home > div.left > div > div.desc > h2.job {
+        margin-left: 2rem;
+    }
+
+    section#Home > div.left > div > div.img > a > img {
+        width: 5%;
+    }
+
+    section#Home > div.right > img {
+        width: 60%;
+    }
+
+    /* about me section */
+    section#About > div.left > img {
+        width: 65%;
+        left: 5%;
+    }
+
+    section#About > div.right > div > div.desc > h2 {
+        font-size: 2.5rem;
+    }
+
+    section#About > div.right > div > div.desc > h4 {
+        font-size: 1.8rem;
+    }
+
+    section#About > div.right > div > div.desc > p {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    /* education section */
+    section#Education > div.topic > h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Education > div.content > article {
+        margin: 3% 10% 1% 3%;
+    }
+
+    section#Education > div.content > article > div.right > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Education > div.content > article > div.right > div > h3 {
+        font-size: 1.8rem;
+    }
+
+    section#Education > div.content > article > div.left > img {
+        width: 35%;
+    }
+
+    section#Education > div.content > article > div.right > p {
+        font-size: 1.1rem;
+        width: 95%;
+    }
+
+    /* assignment section */
+    section#Assignment > div.topic > h2 {
+        font-size: 2.2rem;
+    /
+    }
+
+    section#Assignment > div.content {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3%;
+    }
+
+    section#Assignment > div.content > div {
+        width: 30vw;
+        height: 50vh;
+    }
+
+    section#Assignment > div.content > div > div > h3 {
+        font-size: 1.8rem;
+    }
+
+    section#Assignment > div.content > div > div > p {
+        font-size: 1.2rem;
+    }
+
+    section#Assignment > div.content > div:hover {
+        transform: scale(1.05);
+    }
+
+    @keyframes slideLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-105%);
+        }
+    }
+
+
+    /* project section */
+    section#Project {
+        padding: 4% 8%;
+    }
+
+    section#Project h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Project > div {
+        padding: 2.5%;
+        margin: 1.5% 0;
+    }
+
+    section#Project > div > h2 {
+        font-size: 1.8rem;
+    }
+
+    section#Project > div > p {
+        font-size: 1.1rem;
+        margin: 4% 4% 2% 8%;
+    }
+
+    section#Project > div > .list ul {
+        gap: 0.8rem;
+    }
+
+    section#Project > div > .list ul li {
+        padding: 0.8rem;
+    }
+
+    section#Project > div > img {
+        width: 70px;
+    }
+
+    section#Project > div > button {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    section#Project > button {
+        width: 45px;
+        height: 45px;
+        font-size: 1.8rem;
+    }
+
+    /*Skill section*/
+    section#Skills > div.topic {
+        height: 18vh;
+    }
+
+    section#Skills > div.topic > h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Skills > div.content > div {
+        margin: 2% 6%;
+    }
+
+    section#Skills > div.content > div > div.secondContent {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    section#Skills > div.content > div > div.secondContent > div {
+        padding: 6%;
+        width: 80%;
+        margin-top: 8%;
+        margin-bottom: 12%;
+    }
+
+    section#Skills > div.content > div > div.secondTopic > h3 {
+        font-size: 1.5rem;
+    }
+
+    section#Skills > div.content > div > div.secondContent > div > img {
+        width: 55%;
+    }
+
+    /*Contact section*/
+    section#Contact > div.topic {
+        height: 18vh;
+    }
+
+    section#Contact > div.topic > h2 {
+        font-size: 2.2rem;
+    }
+
+    section#Contact > div.content > div.left {
+        margin: 5% 6% 5% 15%;
+    }
+
+    section#Contact > div.content > div.right {
+        margin: 5% 15% 5% 6%;
+    }
+
+    section#Contact > div.content > div.left > h3 {
+        font-size: 1.8rem;
+    }
+
+    section#Contact > div.content > div.left > p {
+        font-size: 1.3rem;
+        width: 80%;
+    }
+
+    section#Contact > div.content > div.left > div > img {
+        width: 6%;
+    }
+
+    section#Contact > div.content > div.left > div > a,
+    section#Contact > div.content > div.left > div > p {
+        font-size: 1.1rem;
+    }
+
+    section#Contact > div.content > div.right > div > input,
+    section#Contact > div.content > div.right > div > textarea {
+        width: 85%;
+    }
+
+    section#Contact > div.content > div.right > button {
+        width: 77%;
+    }
+
+    /* footer */
+    footer > div.topic > h3 {
+        font-size: 1.4rem;
+    }
+
+    footer > div.content > div.left {
+        margin: 2% 6% 2% 12%;
+    }
+
+    footer > div.content > div.right {
+        margin: 2% 12% 2% 6%;
+    }
+
+    footer > div.content > div.left > h3 {
+        font-size: 1.4rem;
+        letter-spacing: 4px;
+    }
+
+    footer > div.content > div.left > p {
+        font-size: 0.95rem;
+    }
+
+    footer > div.content > div.left > div.email > a {
+        font-size: 14px;
+    }
+
+    footer > div.content > div.right > div > a > img {
+        width: 22px;
+        margin-left: 12%;
+    }
+
+    footer > div.content > div.right > div.name > h4 {
+        font-size: 14px;
+        width: 130%;
+    }
+
+    footer > div.content > div.right > div.image {
+        width: 50%;
+    }
+}
+
 /* Laptop size */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
     /* header section */
     header {
         height: 7vh;
@@ -1855,7 +2149,7 @@ footer > div.content > div.right > div.name {
 }
 
 /* Small Mobile size */
-@media screen and (max-width: 376px){
+@media screen and (max-width: 376px) {
     /* header section */
     header {
         width: 100vw;
@@ -2009,7 +2303,6 @@ footer > div.content > div.right > div.name {
     }
 
     /* project section */
-
     section#Project {
         padding: 2% 3%;
     }
@@ -2058,7 +2351,6 @@ footer > div.content > div.right > div.name {
     }
 
     /*Skill section*/
-
     section#Skills > div.topic {
         height: 12vh;
     }
@@ -2107,7 +2399,6 @@ footer > div.content > div.right > div.name {
     }
 
     /*Contact section*/
-
     section#Contact > div.topic {
         height: 12vh;
     }
@@ -2398,7 +2689,6 @@ footer > div.content > div.right > div.name {
     }
 
     /* project section */
-
     section#Project {
         padding: 2% 3%;
     }
@@ -2449,7 +2739,6 @@ footer > div.content > div.right > div.name {
     }
 
     /*Skill section*/
-
     section#Skills > div.topic {
         height: 12vh;
     }
@@ -2498,7 +2787,6 @@ footer > div.content > div.right > div.name {
     }
 
     /*Contact section*/
-
     section#Contact > div.topic {
         height: 12vh;
     }
