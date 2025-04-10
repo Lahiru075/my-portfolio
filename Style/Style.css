@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 8vh;
     position: fixed;
     top: 0;
@@ -40,15 +40,16 @@ header nav div {
 
 header nav div a {
     text-decoration: none;
-    color: #ebe2ef;
+    color: #ffffff;
     font-size: 100%;
     font-weight: bold;
     transition: color 0.2s;
 }
 
 header nav div a:hover {
-    color: lightgreen;
+    color: #1fcdff;
 }
+
 
 /* Home Section */
 section#Home {
@@ -83,7 +84,7 @@ section#Home > div.left > div {
 
 section#Home > div.left > div > div.desc > p {
     width: 85%;
-    color: #def1e3;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 5%;
@@ -99,30 +100,65 @@ section#Home > div.left > div > div.desc > h2.name {
 }
 
 section#Home > div.left > div > div.desc > h2.job {
-    color: #4CAF50;
+    color: #4CC9FE;
     margin-left: 3rem;
     margin-bottom: 6%;
+    animation: moveRight 2s 1 forwards;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+section#Home > div.left > div > div.img > a {
+    margin-right: 1%;
 }
 
 section#Home > div.left > div > div.img > a > img {
     width: 6%;
-    padding-right: 1%;
+    border-radius: 30%;
+    transition: transform 0.1s;
+}
+
+section#Home > div.left > div > div.img > a > img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 section#Home > div.right {
     position: relative;
 }
 
-section#Home > div.right > img {
-    border: 1px solid #0c16a5;
-    border-radius: 5%;
+section#Home > div.right > img{
+    border-radius: 30px;
     width: 60%;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     margin: auto;
+    animation: moveDown 2s 1 forwards;
+    box-shadow: 0 0 40px 1px rgba(18, 255, 219, 0.5);
 }
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 
 /* About Me Section */
 
@@ -133,7 +169,7 @@ section#About {
 
 section#About > div {
     height: 100vh;
-    background-color: #080c10;
+    background-color: #090810;
     position: relative;
 }
 
@@ -145,23 +181,35 @@ section#About > div.left > img {
     right: 0;
     left: 10%;
     margin: auto;
-    border: 2px solid purple;
     border-radius: 5%;
+    box-shadow: 0 0 50px 6px rgba(18, 255, 219, 0.5);
+    transition: transform 0.3s ease;
+}
+
+section#About > div.left > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px 5px rgba(18, 255, 219, 0.7);
 }
 
 section#About > div.right > div {
     width: fit-content;
     height: fit-content;
-    /*border: 1px solid black;*/
 }
 
 section#About > div.right > div > div.desc > p {
-    width: 70%;
+    font-weight: normal;
 }
 
 section#About > div.right > div > .img > a > img {
-    width: 8%;
+    width: 5%;
     margin-right: 2%;
+    border-radius: 30%;
+    transition: transform 0.1s;
+}
+
+section#About > div.right > div > .img > a > img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 section#About > div.right > div {
@@ -176,7 +224,7 @@ section#About > div.right > div {
 section#About > div.right > div > div.desc > h2 {
     font-size: 3rem;
     font-weight: bold;
-    color: #4CAF50;
+    color: #4CC9FE;
     margin-bottom: 3%;
 }
 
@@ -189,8 +237,8 @@ section#About > div.right > div > div.desc > h4 {
 
 section#About > div.right > div > div.desc > p {
     width: 85%;
-    color: #def1e3;
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 5%;
 }
@@ -198,8 +246,9 @@ section#About > div.right > div > div.desc > p {
 /* Education Section */
 
 section#Education {
-    background-color: #100808;
+    background-color: #090810;
     position: relative;
+    padding: 2%;
 }
 
 section#Education > div.topic {
@@ -209,7 +258,7 @@ section#Education > div.topic {
     justify-content: center;
     align-items: center;
     /*border: 1px solid black;*/
-    color: #c5add1;
+    color: #4CC9FE;
 }
 
 section#Education > div.topic > h2 {
@@ -230,15 +279,19 @@ section#Education > div.content > article {
 }
 
 section#Education > div.content > article > div.right {
-    border: 1px solid #090961;
+    border: 1px solid #183a47;
     grid-column: 2/4;
     padding-top: 4%;
     padding-left: 4%;
     padding-bottom: 4%;
-    background: linear-gradient(359deg, rgba(1, 14, 35, 1), rgba(0, 0, 0, 1));
-    -webkit-background: linear-gradient(359deg, rgba(1, 14, 35, 1), rgba(0, 0, 0, 1));
-    -moz-background: linear-gradient(359deg, rgba(1, 14, 35, 1), rgba(0, 0, 0, 1));
+    background-color: #101420;
     border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section#Education > div.content > article > div.right:hover {
+    transform: translateX(10px); /* Move 10px to the right */
+    box-shadow: 0 8px 20px rgba(18, 255, 219, 0.3); /* Add a teal shadow */
 }
 
 section#Education > div.content > article > div.right > div {
@@ -255,13 +308,13 @@ section#Education > div.content > article > div.right > p {
 
 section#Education > div.content > article > div.right > div > h3 {
     font-size: 2rem;
-    color: #def1e3;
+    color: #ffffff;
 }
 
 section#Education > div.content > article > div.right > h2 {
     font-size: 2rem;
     margin-bottom: 2%;
-    color: #def1e3;
+    color: #ffffff;
     font-weight: normal;
 }
 
@@ -273,6 +326,11 @@ section#Education > div.content > article > div.left {
 
 section#Education > div.content > article > div.left > img {
     width: 30%;
+    transition: transform 0.3s;
+}
+
+section#Education > div.content > article > div.left > img:hover {
+    transform: scale(1.1);
 }
 
 section#Education > div.content > article > div.right > div > img {
@@ -280,14 +338,10 @@ section#Education > div.content > article > div.right > div > img {
     margin-right: 2%;
 }
 
-section#Education > div.content > article.articleThree {
-    margin-bottom: 5%;
-}
-
 /*Assignment section*/
 
 section#Assignment {
-    background-color: #130a0a;
+    background-color: #090810;
     position: relative;
     overflow: hidden;
 }
@@ -298,7 +352,7 @@ section#Assignment > div.topic {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #c5add1;
+    color: #4CC9FE;
     position: relative;
     z-index: 1;
 }
@@ -321,13 +375,17 @@ section#Assignment > div.content {
 section#Assignment > div.content > div {
     width: 25vw;
     height: 60vh;
-    background: linear-gradient(360deg, rgb(10, 23, 46), rgb(0, 0, 0));
-    -webkit-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
-    -moz-background: linear-gradient(360deg, rgba(10, 23, 46, 1), rgba(0, 0, 0, 1));
+    background-color: rgba(13, 50, 64, 0.42);
     border-radius: 10%;
-    border: 1px solid #200471;
     padding: 5%;
     margin: 0 15% 15% 15%;
+    transition: transform 0.2s;
+}
+
+section#Assignment > div.content > div:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 30px rgba(72, 179, 179, 0.64);
+    z-index: 1;
 }
 
 section#Assignment > div.content > div > div > h3 {
@@ -343,14 +401,9 @@ section#Assignment > div.content > div > div > p {
     display: flex;
     justify-content: center;
     margin: 5%;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #def1e3;
-}
-
-section#Assignment > div.content > div:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    z-index: 2;
+    text-align: center;
 }
 
 section#Assignment > div.content:hover {
@@ -359,97 +412,95 @@ section#Assignment > div.content:hover {
 
 
 /* Project Section */
+
+
 section#Project {
-    background-color: #100808;
+    background-color: #090810;
     padding: 5% 10%;
-    text-align: center;
 }
 
-section#Project h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2%;
-    color: #c5add1;
-}
-
-section#Project > div {
-    background: linear-gradient(16deg, rgba(11, 24, 55, 1), rgba(0, 0, 0, 1));
-    -webkit-background: linear-gradient(16deg, rgba(11, 24, 55, 1), rgba(0, 0, 0, 1));
-    -moz-background: linear-gradient(16deg, rgba(11, 24, 55, 1), rgba(0, 0, 0, 1));
-    border-radius: 20px;
-    padding: 3%;
-    margin: 2% 0;
-    border: 1px solid rgba(18, 69, 106, 0.46);
-    box-shadow: 8px 8px 15px 5px rgb(0, 0, 0);
-}
-
-section#Project > div > h2 {
-    font-size: 2rem;
-    margin-bottom: 2%;
-    color: rgba(255, 255, 255, 0.64);
-}
-
-section#Project > div > p {
-    font-size: 1.2rem;
-    color: #def1e3;
-    text-align: left;
-    margin: 5% 5% 2% 10%;
-}
-
-section#Project > div > .list {
+section#Project > div.topic {
+    height: 20vh;
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
+    align-items: center;
+    color: #4CC9FE;
+    font-size: 2rem;
+    margin-bottom: 1%;
 }
 
-section#Project > div > .list ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
+section#Project > div.content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-section#Project > div > .list ul li {
-    background-color: rgba(255, 255, 255, 0.07);
-    padding: 1rem;
-    border-radius: 10px;
-    color: white;
+section#Project > div.content > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5%;
+    padding: 5%;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
 }
 
-section#Project > div > img {
-    width: 80px;
-    margin: 1%;
+section#Project > div.content > div:hover {
+    box-shadow: 0 8px 20px rgba(18, 255, 219, 0.3);
 }
 
-section#Project > div > button {
-    background-color: rgba(23, 133, 20, 0.2);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+section#Project > div.content > div > div.left > img {
+    width: 98%;
+    height: 100%;
+    border-radius: 0.8rem;
 }
 
-section#Project > div > button:hover {
-    background-color: #45a049;
+section#Project > div.content > div {
+    background-color: rgba(53, 134, 154, 0.16);
 }
 
-section#Project > button {
-    width: 50px;
-    height: 50px;
+section#Project > div.content > div > div.right {
+    padding: 8%;
+}
+
+section#Project > div.content > div > div.right > h2 {
     font-size: 2rem;
     color: white;
-    border: 2px solid white;
-    background-color: #100808;
-    border-radius: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
+}
+
+section#Project > div.content > div > div.right > h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2.5%;
+    color: #4CC9FE;
+}
+
+section#Project > div.content > div > div.right > p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 4%;
+}
+
+section#Project > div.content > div > div.right > button {
+    width: 32%;
+    height: 13%;
+    background-color: #4CC9FE;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    transition: transform 0.3s;
+}
+
+section#Project > div.content > div > div.right > button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(76, 201, 254, 0.5);
 }
 
 /*Skill section*/
 
 section#Skills {
-    background-color: #130a0a;
+    background-color: #090810;
     position: relative;
 }
 
@@ -469,7 +520,7 @@ section#Skills > div.content {
 }
 
 section#Skills > div.content > div {
-    border: 1px solid #200471;
+    border: 1px solid rgba(27, 62, 76, 0.42);
     margin: 2% 8%;
     background-color: #0F1420;
     border-radius: 20px;
@@ -484,7 +535,7 @@ section#Skills > div.content > div > div.secondContent {
 }
 
 section#Skills > div.content > div > div.secondContent > div {
-    border: 1px solid #200471;
+    /*border: 1px solid #1e4c60;*/
     padding: 8%;
     text-align: center;
     margin-right: 5%;
@@ -494,11 +545,18 @@ section#Skills > div.content > div > div.secondContent > div {
     background-color: rgba(255, 255, 255, 0.07);
     border-radius: 20px;
 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+section#Skills > div.content > div > div.secondContent > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(18, 255, 219, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 section#Skills > div.topic > h2 {
-    font-size: 2.5rem;
-    color: #c5add1;
+    font-size: 3rem;
+    color: #4CC9FE;
 }
 
 section#Skills > div.content > div > div.secondTopic > h3 {
@@ -527,7 +585,7 @@ section#Skills > div.content > div.tools {
 /*Contact section*/
 
 section#Contact {
-    background-color: #100808;
+    background-color: #090810;
     position: relative;
 }
 
@@ -538,7 +596,7 @@ section#Contact > div.topic {
     justify-content: center;
     align-items: center;
     /*border: 1px solid black;*/
-    color: #c5add1;
+    color: #4CC9FE;
 }
 
 section#Contact > div.content {
@@ -547,9 +605,6 @@ section#Contact > div.content {
     grid-template-rows: repeat(1, 1fr);
 }
 
-section#Contact > div.content > div {
-    /*border: 1px solid black;*/
-}
 
 section#Contact > div.content > div.left {
     margin: 5% 8% 5% 20%;
@@ -579,24 +634,32 @@ section#Contact > div.content > div.left > div > img {
 section#Contact > div.content > div.left > div > a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: white;
+    color: #ffffff;
 }
 
 section#Contact > div.content > div.left > div > p {
-    color: #def1e3;
+    color: #ffffff;
 }
 
 section#Contact > div.content > div.left > h3 {
     font-size: 2rem;
     margin: 5% 5%;
-    color: #acacda;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 section#Contact > div.content > div.left > p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 70%;
     margin: 10% 5% 5% 5%;
-    color: #ffffff;
+    color: #bee9ff;
+}
+
+section#Contact > div.content > div.left > div {
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.left > div:hover {
+    transform: translateX(8px);
 }
 
 section#Contact > div.content > div.left > div > p {
@@ -613,8 +676,13 @@ section#Contact > div.content > div.right > div > input {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.15);
     color: white;
-    border: 2px solid #143640;
+    border: 2px solid rgba(41, 88, 104, 0.61);
     padding: 3%;
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.right > div > input:hover {
+    transform: translateY(-2px);
 }
 
 section#Contact > div.content > div.right > div > textarea {
@@ -623,8 +691,13 @@ section#Contact > div.content > div.right > div > textarea {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.15);
     color: white;
-    border: 2px solid #143640;
+    border: 2px solid rgba(41, 88, 104, 0.61);
     padding: 3%;
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.right > div > textarea:hover {
+    transform: translateY(-2px);
 }
 
 section#Contact > div.content > div.right > button {
@@ -633,15 +706,18 @@ section#Contact > div.content > div.right > button {
     margin: 5% 5% 8% 5%;
     border-radius: 5px;
     font-weight: bold;
-    border: 2px solid #143640;
+    border: 2px solid rgba(41, 88, 104, 0.61);
+    transition: transform 0.3s;
+}
+
+section#Contact > div.content > div.right > button:hover {
+    transform: scale(1.03);
 }
 
 /* footer */
 
 footer {
-    background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
-    -webkit-background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
-    -moz-background: radial-gradient(circle, rgba(23, 63, 115, 1), rgba(19, 13, 63, 1));
+    background-color: #1a5276;
 }
 
 footer > div.topic {
@@ -653,7 +729,7 @@ footer > div.topic {
 }
 
 footer > div.topic > h3 {
-    color: white;
+    color: rgba(255, 255, 255, 0.79);
     font-size: 1.5rem;
 }
 
@@ -663,16 +739,12 @@ footer > div.content {
     grid-template-rows: repeat(1, 1fr);
 }
 
-footer > div.content > div {
-    /*border: 1px solid black;*/
-}
-
 footer > div.content > div.left {
-    margin: 2% 8% 2% 15%;
+    margin: 1% 1% 2% 12%;
 }
 
 footer > div.content > div.right {
-    margin: 2% 15% 2% 8%;
+    margin: 1% 0 1% 4%;
     position: relative;
 }
 
@@ -680,14 +752,14 @@ footer > div.content > div.left > h3 {
     color: white;
     letter-spacing: 5px;
     font-weight: lighter;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     margin-top: 2%;
     font-size: 1.5rem;
 }
 
 footer > div.content > div.left > p {
     color: white;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     font-size: 1rem;
 }
 
@@ -715,7 +787,6 @@ footer > div.content > div.right > div > a > img {
 
 footer > div.content > div.right > div.name > h4 {
     color: white;
-    margin-top: 10px;
     font-size: 15px;
     width: 125%;
 }
@@ -737,7 +808,6 @@ footer > div.content > div.right > div.name {
     position: absolute;
     right: 5%;
     bottom: 30%;
-    margin: auto;
 }
 
 @keyframes slideLeft {
@@ -883,50 +953,50 @@ footer > div.content > div.right > div.name {
 
 
     /* project section */
-    section#Project {
-        padding: 4% 8%;
-    }
+    /*section#Project {*/
+    /*    padding: 4% 8%;*/
+    /*}*/
 
-    section#Project h2 {
-        font-size: 2.2rem;
-    }
+    /*section#Project h2 {*/
+    /*    font-size: 2.2rem;*/
+    /*}*/
 
-    section#Project > div {
-        padding: 2.5%;
-        margin: 1.5% 0;
-    }
+    /*section#Project > div {*/
+    /*    padding: 2.5%;*/
+    /*    margin: 1.5% 0;*/
+    /*}*/
 
-    section#Project > div > h2 {
-        font-size: 1.8rem;
-    }
+    /*section#Project > div > h2 {*/
+    /*    font-size: 1.8rem;*/
+    /*}*/
 
-    section#Project > div > p {
-        font-size: 1.1rem;
-        margin: 4% 4% 2% 8%;
-    }
+    /*section#Project > div > p {*/
+    /*    font-size: 1.1rem;*/
+    /*    margin: 4% 4% 2% 8%;*/
+    /*}*/
 
-    section#Project > div > .list ul {
-        gap: 0.8rem;
-    }
+    /*section#Project > div > .list ul {*/
+    /*    gap: 0.8rem;*/
+    /*}*/
 
-    section#Project > div > .list ul li {
-        padding: 0.8rem;
-    }
+    /*section#Project > div > .list ul li {*/
+    /*    padding: 0.8rem;*/
+    /*}*/
 
-    section#Project > div > img {
-        width: 70px;
-    }
+    /*section#Project > div > img {*/
+    /*    width: 70px;*/
+    /*}*/
 
-    section#Project > div > button {
-        padding: 0.8rem 1.8rem;
-        font-size: 0.9rem;
-    }
+    /*section#Project > div > button {*/
+    /*    padding: 0.8rem 1.8rem;*/
+    /*    font-size: 0.9rem;*/
+    /*}*/
 
-    section#Project > button {
-        width: 45px;
-        height: 45px;
-        font-size: 1.8rem;
-    }
+    /*section#Project > button {*/
+    /*    width: 45px;*/
+    /*    height: 45px;*/
+    /*    font-size: 1.8rem;*/
+    /*}*/
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -1178,50 +1248,50 @@ footer > div.content > div.right > div.name {
 
 
     /* project section */
-    section#Project {
-        padding: 4% 8%;
-    }
+    /*section#Project {*/
+    /*    padding: 4% 8%;*/
+    /*}*/
 
-    section#Project h2 {
-        font-size: 2.2rem;
-    }
+    /*section#Project h2 {*/
+    /*    font-size: 2.2rem;*/
+    /*}*/
 
-    section#Project > div {
-        padding: 2.5%;
-        margin: 1.5% 0;
-    }
+    /*section#Project > div {*/
+    /*    padding: 2.5%;*/
+    /*    margin: 1.5% 0;*/
+    /*}*/
 
-    section#Project > div > h2 {
-        font-size: 1.8rem;
-    }
+    /*section#Project > div > h2 {*/
+    /*    font-size: 1.8rem;*/
+    /*}*/
 
-    section#Project > div > p {
-        font-size: 1.1rem;
-        margin: 4% 4% 2% 8%;
-    }
+    /*section#Project > div > p {*/
+    /*    font-size: 1.1rem;*/
+    /*    margin: 4% 4% 2% 8%;*/
+    /*}*/
 
-    section#Project > div > .list ul {
-        gap: 0.8rem;
-    }
+    /*section#Project > div > .list ul {*/
+    /*    gap: 0.8rem;*/
+    /*}*/
 
-    section#Project > div > .list ul li {
-        padding: 0.8rem;
-    }
+    /*section#Project > div > .list ul li {*/
+    /*    padding: 0.8rem;*/
+    /*}*/
 
-    section#Project > div > img {
-        width: 70px;
-    }
+    /*section#Project > div > img {*/
+    /*    width: 70px;*/
+    /*}*/
 
-    section#Project > div > button {
-        padding: 0.8rem 1.8rem;
-        font-size: 0.9rem;
-    }
+    /*section#Project > div > button {*/
+    /*    padding: 0.8rem 1.8rem;*/
+    /*    font-size: 0.9rem;*/
+    /*}*/
 
-    section#Project > button {
-        width: 45px;
-        height: 45px;
-        font-size: 1.8rem;
-    }
+    /*section#Project > button {*/
+    /*    width: 45px;*/
+    /*    height: 45px;*/
+    /*    font-size: 1.8rem;*/
+    /*}*/
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -1554,58 +1624,58 @@ footer > div.content > div.right > div.name {
     }
 
     /* project section */
-    section#Project {
-        padding: 3% 5%;
-    }
+    /*section#Project {*/
+    /*    padding: 3% 5%;*/
+    /*}*/
 
-    section#Project h2 {
-        font-size: 2rem;
-        margin-bottom: 3%;
-    }
+    /*section#Project h2 {*/
+    /*    font-size: 2rem;*/
+    /*    margin-bottom: 3%;*/
+    /*}*/
 
-    section#Project > div {
-        padding: 2%;
-        margin: 1% 2%;
-        box-shadow: 5px 5px 10px 3px rgb(0, 0, 0);
-    }
+    /*section#Project > div {*/
+    /*    padding: 2%;*/
+    /*    margin: 1% 2%;*/
+    /*    box-shadow: 5px 5px 10px 3px rgb(0, 0, 0);*/
+    /*}*/
 
-    section#Project > div > h2 {
-        font-size: 1.6rem;
-        margin-top: 2%;
-        margin-bottom: 5%;
-    }
+    /*section#Project > div > h2 {*/
+    /*    font-size: 1.6rem;*/
+    /*    margin-top: 2%;*/
+    /*    margin-bottom: 5%;*/
+    /*}*/
 
-    section#Project > div > p {
-        font-size: 1rem;
-        margin: 5% 5% 3% 5%;
-        text-align: center;
-    }
+    /*section#Project > div > p {*/
+    /*    font-size: 1rem;*/
+    /*    margin: 5% 5% 3% 5%;*/
+    /*    text-align: center;*/
+    /*}*/
 
-    section#Project > div > .list {
-        margin: 2% 5%;
-    }
+    /*section#Project > div > .list {*/
+    /*    margin: 2% 5%;*/
+    /*}*/
 
-    section#Project > div > .list ul li {
-        padding: 0.7rem;
-        width: 80%;
-        text-align: center;
-    }
+    /*section#Project > div > .list ul li {*/
+    /*    padding: 0.7rem;*/
+    /*    width: 80%;*/
+    /*    text-align: center;*/
+    /*}*/
 
-    section#Project > div > img {
-        width: 60px;
-    }
+    /*section#Project > div > img {*/
+    /*    width: 60px;*/
+    /*}*/
 
-    section#Project > div > button {
-        padding: 0.7rem 1.5rem;
-        font-size: 0.9rem;
-    }
+    /*section#Project > div > button {*/
+    /*    padding: 0.7rem 1.5rem;*/
+    /*    font-size: 0.9rem;*/
+    /*}*/
 
-    section#Project > button {
-        width: 40px;
-        height: 40px;
-        font-size: 1.5rem;
-        margin-top: 2%;
-    }
+    /*section#Project > button {*/
+    /*    width: 40px;*/
+    /*    height: 40px;*/
+    /*    font-size: 1.5rem;*/
+    /*    margin-top: 2%;*/
+    /*}*/
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -1931,51 +2001,51 @@ footer > div.content > div.right > div.name {
     }
 
     /* project section */
-    section#Project {
-        padding: 2% 3%;
-    }
+    /*section#Project {*/
+    /*    padding: 2% 3%;*/
+    /*}*/
 
-    section#Project h2 {
-        font-size: 1.6rem;
-    }
+    /*section#Project h2 {*/
+    /*    font-size: 1.6rem;*/
+    /*}*/
 
-    section#Project > div {
-        padding: 1.5%;
-        margin: 1% 6%;
-        border-radius: 15px;
-    }
+    /*section#Project > div {*/
+    /*    padding: 1.5%;*/
+    /*    margin: 1% 6%;*/
+    /*    border-radius: 15px;*/
+    /*}*/
 
-    section#Project > div > h2 {
-        font-size: 1rem;
-    }
+    /*section#Project > div > h2 {*/
+    /*    font-size: 1rem;*/
+    /*}*/
 
-    section#Project > div > p {
-        font-size: 0.6rem;
-        margin: 6% 5% 6% 5%;
-    }
+    /*section#Project > div > p {*/
+    /*    font-size: 0.6rem;*/
+    /*    margin: 6% 5% 6% 5%;*/
+    /*}*/
 
-    section#Project > div > .list ul li {
-        padding: 0.6rem;
-        width: 40%;
-        font-size: 10px;
-    }
+    /*section#Project > div > .list ul li {*/
+    /*    padding: 0.6rem;*/
+    /*    width: 40%;*/
+    /*    font-size: 10px;*/
+    /*}*/
 
-    section#Project > div > img {
-        width: 40px;
-    }
+    /*section#Project > div > img {*/
+    /*    width: 40px;*/
+    /*}*/
 
-    section#Project > div > button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.8rem;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
+    /*section#Project > div > button {*/
+    /*    padding: 0.6rem 1.2rem;*/
+    /*    font-size: 0.8rem;*/
+    /*    margin-top: 2%;*/
+    /*    margin-bottom: 2%;*/
+    /*}*/
 
-    section#Project > button {
-        width: 35px;
-        height: 35px;
-        font-size: 0.8rem;
-    }
+    /*section#Project > button {*/
+    /*    width: 35px;*/
+    /*    height: 35px;*/
+    /*    font-size: 0.8rem;*/
+    /*}*/
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -2305,52 +2375,52 @@ footer > div.content > div.right > div.name {
     }
 
     /* project section */
-    section#Project {
-        padding: 2% 3%;
-    }
+    /*section#Project {*/
+    /*    padding: 2% 3%;*/
+    /*}*/
 
-    section#Project h2 {
-        font-size: 1.6rem;
-    }
+    /*section#Project h2 {*/
+    /*    font-size: 1.6rem;*/
+    /*}*/
 
-    section#Project > div {
-        padding: 1.5%;
-        margin: 1% 6%;
-        border-radius: 15px;
-    }
+    /*section#Project > div {*/
+    /*    padding: 1.5%;*/
+    /*    margin: 1% 6%;*/
+    /*    border-radius: 15px;*/
+    /*}*/
 
-    section#Project > div > h2 {
-        font-size: 1rem;
-        margin-top: 5%;
-    }
+    /*section#Project > div > h2 {*/
+    /*    font-size: 1rem;*/
+    /*    margin-top: 5%;*/
+    /*}*/
 
-    section#Project > div > p {
-        font-size: 0.6rem;
-        margin: 6% 5% 6% 5%;
-    }
+    /*section#Project > div > p {*/
+    /*    font-size: 0.6rem;*/
+    /*    margin: 6% 5% 6% 5%;*/
+    /*}*/
 
-    section#Project > div > .list ul li {
-        padding: 0.6rem;
-        width: 40%;
-        font-size: 10px;
-    }
+    /*section#Project > div > .list ul li {*/
+    /*    padding: 0.6rem;*/
+    /*    width: 40%;*/
+    /*    font-size: 10px;*/
+    /*}*/
 
-    section#Project > div > img {
-        width: 40px;
-    }
+    /*section#Project > div > img {*/
+    /*    width: 40px;*/
+    /*}*/
 
-    section#Project > div > button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.8rem;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
+    /*section#Project > div > button {*/
+    /*    padding: 0.6rem 1.2rem;*/
+    /*    font-size: 0.8rem;*/
+    /*    margin-top: 2%;*/
+    /*    margin-bottom: 2%;*/
+    /*}*/
 
-    section#Project > button {
-        width: 35px;
-        height: 35px;
-        font-size: 0.8rem;
-    }
+    /*section#Project > button {*/
+    /*    width: 35px;*/
+    /*    height: 35px;*/
+    /*    font-size: 0.8rem;*/
+    /*}*/
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -2691,54 +2761,54 @@ footer > div.content > div.right > div.name {
     }
 
     /* project section */
-    section#Project {
-        padding: 2% 3%;
-    }
+    /*section#Project {*/
+    /*    padding: 2% 3%;*/
+    /*}*/
 
-    section#Project h2 {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-    }
+    /*section#Project h2 {*/
+    /*    font-size: 1.1rem;*/
+    /*    margin-bottom: 1rem;*/
+    /*    margin-top: 1rem;*/
+    /*}*/
 
-    section#Project > div {
-        padding: 1.5%;
-        margin: 1% 6%;
-        border-radius: 15px;
-    }
+    /*section#Project > div {*/
+    /*    padding: 1.5%;*/
+    /*    margin: 1% 6%;*/
+    /*    border-radius: 15px;*/
+    /*}*/
 
-    section#Project > div > h2 {
-        font-size: 0.8rem;
-        margin-top: 5%;
-    }
+    /*section#Project > div > h2 {*/
+    /*    font-size: 0.8rem;*/
+    /*    margin-top: 5%;*/
+    /*}*/
 
-    section#Project > div > p {
-        font-size: 0.5rem;
-        margin: 6% 5% 6% 5%;
-    }
+    /*section#Project > div > p {*/
+    /*    font-size: 0.5rem;*/
+    /*    margin: 6% 5% 6% 5%;*/
+    /*}*/
 
-    section#Project > div > .list ul li {
-        padding: 0.6rem;
-        width: 40%;
-        font-size: 8px;
-    }
+    /*section#Project > div > .list ul li {*/
+    /*    padding: 0.6rem;*/
+    /*    width: 40%;*/
+    /*    font-size: 8px;*/
+    /*}*/
 
-    section#Project > div > img {
-        width: 40px;
-    }
+    /*section#Project > div > img {*/
+    /*    width: 40px;*/
+    /*}*/
 
-    section#Project > div > button {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.6rem;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
+    /*section#Project > div > button {*/
+    /*    padding: 0.6rem 1.2rem;*/
+    /*    font-size: 0.6rem;*/
+    /*    margin-top: 2%;*/
+    /*    margin-bottom: 2%;*/
+    /*}*/
 
-    section#Project > button {
-        width: 30px;
-        height: 30px;
-        font-size: 0.8rem;
-    }
+    /*section#Project > button {*/
+    /*    width: 30px;*/
+    /*    height: 30px;*/
+    /*    font-size: 0.8rem;*/
+    /*}*/
 
     /*Skill section*/
     section#Skills > div.topic {
