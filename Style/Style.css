@@ -25,7 +25,7 @@ header {
     z-index: 1000;
 }
 
-header img {
+header img#logo {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,6 +48,10 @@ header nav div a {
 
 header nav div a:hover {
     color: #1fcdff;
+}
+
+header img#menu_icon{
+    display: none;
 }
 
 
@@ -137,7 +141,7 @@ section#Home > div.right {
 }
 
 section#Home > div.right > img{
-    border-radius: 30px;
+    border-radius: 20px;
     width: 60%;
     position: absolute;
     top: 0;
@@ -416,11 +420,11 @@ section#Assignment > div.content:hover {
 
 section#Project {
     background-color: #090810;
-    padding: 5% 10%;
+    padding: 5% 8%;
 }
 
 section#Project > div.topic {
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -952,51 +956,40 @@ footer > div.content > div.right > div.name {
     }
 
 
-    /* project section */
-    /*section#Project {*/
-    /*    padding: 4% 8%;*/
-    /*}*/
+    /* Project Section */
 
-    /*section#Project h2 {*/
-    /*    font-size: 2.2rem;*/
-    /*}*/
+    section#Project > div.topic {
+        font-size: 1.5rem;
+    }
 
-    /*section#Project > div {*/
-    /*    padding: 2.5%;*/
-    /*    margin: 1.5% 0;*/
-    /*}*/
+    section#Project > div.content > div > div.left > img {
+        width: 100%;
+        height: 95%;
+    }
 
-    /*section#Project > div > h2 {*/
-    /*    font-size: 1.8rem;*/
-    /*}*/
+    section#Project > div.content > div {
+        padding: 4% 4% 2% 4%;
+    }
 
-    /*section#Project > div > p {*/
-    /*    font-size: 1.1rem;*/
-    /*    margin: 4% 4% 2% 8%;*/
-    /*}*/
+    section#Project > div.content > div > div.right {
+        padding: 2% 0 0 5%;
+    }
 
-    /*section#Project > div > .list ul {*/
-    /*    gap: 0.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h2 {
+        font-size: 1.8rem;
+    }
 
-    /*section#Project > div > .list ul li {*/
-    /*    padding: 0.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h3 {
+        font-size: 1.2rem;
+    }
 
-    /*section#Project > div > img {*/
-    /*    width: 70px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > p {
+        font-size: 1rem;
+    }
 
-    /*section#Project > div > button {*/
-    /*    padding: 0.8rem 1.8rem;*/
-    /*    font-size: 0.9rem;*/
-    /*}*/
-
-    /*section#Project > button {*/
-    /*    width: 45px;*/
-    /*    height: 45px;*/
-    /*    font-size: 1.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > button {
+        font-size: 1rem;
+    }
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -1161,7 +1154,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Home > div.right > img {
-        width: 60%;
+        width: 75%;
     }
 
     /* about me section */
@@ -1247,51 +1240,40 @@ footer > div.content > div.right > div.name {
     }
 
 
-    /* project section */
-    /*section#Project {*/
-    /*    padding: 4% 8%;*/
-    /*}*/
+    /* Project Section */
 
-    /*section#Project h2 {*/
-    /*    font-size: 2.2rem;*/
-    /*}*/
+    section#Project > div.topic {
+        font-size: 1.5rem;
+    }
 
-    /*section#Project > div {*/
-    /*    padding: 2.5%;*/
-    /*    margin: 1.5% 0;*/
-    /*}*/
+    section#Project > div.content > div > div.left > img {
+        width: 100%;
+        height: 95%;
+    }
 
-    /*section#Project > div > h2 {*/
-    /*    font-size: 1.8rem;*/
-    /*}*/
+    section#Project > div.content > div {
+        padding: 4% 4% 2% 4%;
+    }
 
-    /*section#Project > div > p {*/
-    /*    font-size: 1.1rem;*/
-    /*    margin: 4% 4% 2% 8%;*/
-    /*}*/
+    section#Project > div.content > div > div.right {
+        padding: 2% 0 0 5%;
+    }
 
-    /*section#Project > div > .list ul {*/
-    /*    gap: 0.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h2 {
+        font-size: 1.8rem;
+    }
 
-    /*section#Project > div > .list ul li {*/
-    /*    padding: 0.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h3 {
+        font-size: 1.2rem;
+    }
 
-    /*section#Project > div > img {*/
-    /*    width: 70px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > p {
+        font-size: 0.8rem;
+    }
 
-    /*section#Project > div > button {*/
-    /*    padding: 0.8rem 1.8rem;*/
-    /*    font-size: 0.9rem;*/
-    /*}*/
-
-    /*section#Project > button {*/
-    /*    width: 45px;*/
-    /*    height: 45px;*/
-    /*    font-size: 1.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > button {
+        font-size: 0.8rem;
+    }
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -1425,13 +1407,15 @@ footer > div.content > div.right > div.name {
         margin: 0 auto;
     }
 
-    header nav div {
-        gap: 1rem;
-        width: 100%;
+    header > nav > div#header_links {
+        display: none;
     }
 
-    header nav div a {
-        font-size: 70%;
+    header > img#menu_icon{
+        display: block;
+        width: 4%;
+        position: absolute;
+        right: 1%;
     }
 
     /* home section */
@@ -1496,6 +1480,7 @@ footer > div.content > div.right > div.name {
         position: static;
         display: block;
         margin: 0 auto;
+        box-shadow: 0 0 20px 1px rgba(18, 255, 219, 0.5);
     }
 
     /* about me section */
@@ -1510,11 +1495,12 @@ footer > div.content > div.right > div.name {
     }
 
     section#About > div.left > img {
-        width: 50%;
+        width: 45%;
         position: relative;
         display: block;
-        margin: 20px auto;
+        margin: 35px auto;
         left: 0;
+        box-shadow: 0 0 30px 4px rgba(18, 255, 219, 0.5);
     }
 
     section#About > div.right > div {
@@ -1546,7 +1532,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Education > div.topic > h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     section#Education > div.content > article {
@@ -1589,7 +1575,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.topic > h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     section#Assignment > div.content {
@@ -1623,59 +1609,40 @@ footer > div.content > div.right > div.name {
         }
     }
 
-    /* project section */
-    /*section#Project {*/
-    /*    padding: 3% 5%;*/
-    /*}*/
+    /* Project Section */
 
-    /*section#Project h2 {*/
-    /*    font-size: 2rem;*/
-    /*    margin-bottom: 3%;*/
-    /*}*/
+    section#Project > div.topic {
+        font-size: 1.3rem;
+    }
 
-    /*section#Project > div {*/
-    /*    padding: 2%;*/
-    /*    margin: 1% 2%;*/
-    /*    box-shadow: 5px 5px 10px 3px rgb(0, 0, 0);*/
-    /*}*/
+    section#Project > div.content > div > div.left > img {
+        width: 100%;
+        height: 95%;
+    }
 
-    /*section#Project > div > h2 {*/
-    /*    font-size: 1.6rem;*/
-    /*    margin-top: 2%;*/
-    /*    margin-bottom: 5%;*/
-    /*}*/
+    section#Project > div.content > div {
+        padding: 4% 4% 2% 4%;
+    }
 
-    /*section#Project > div > p {*/
-    /*    font-size: 1rem;*/
-    /*    margin: 5% 5% 3% 5%;*/
-    /*    text-align: center;*/
-    /*}*/
+    section#Project > div.content > div > div.right {
+        padding: 3% 0 0 5%;
+    }
 
-    /*section#Project > div > .list {*/
-    /*    margin: 2% 5%;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h2 {
+        font-size: 1.3rem;
+    }
 
-    /*section#Project > div > .list ul li {*/
-    /*    padding: 0.7rem;*/
-    /*    width: 80%;*/
-    /*    text-align: center;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h3 {
+        font-size: 0.8rem;
+    }
 
-    /*section#Project > div > img {*/
-    /*    width: 60px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > p {
+        font-size: 0.6rem;
+    }
 
-    /*section#Project > div > button {*/
-    /*    padding: 0.7rem 1.5rem;*/
-    /*    font-size: 0.9rem;*/
-    /*}*/
-
-    /*section#Project > button {*/
-    /*    width: 40px;*/
-    /*    height: 40px;*/
-    /*    font-size: 1.5rem;*/
-    /*    margin-top: 2%;*/
-    /*}*/
+    section#Project > div.content > div > div.right > button {
+        font-size: 0.6rem;
+    }
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -1888,12 +1855,15 @@ footer > div.content > div.right > div.name {
 
     section#Home > div.right > img {
         width: 45%;
+        box-shadow: 0 0 15px 1px rgba(18, 255, 219, 0.5);
     }
 
     /* about me section */
     section#About > div.left > img {
         width: 60%;
-        margin: 15px auto;
+        margin: 25px auto;
+        box-shadow: 0 0 20px 4px rgba(18, 255, 219, 0.5);
+
     }
 
     section#About > div.right > div > div.desc > h2 {
@@ -1922,7 +1892,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Education > div.topic > h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     section#Education > div.content > article {
@@ -1965,7 +1935,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.topic > h2 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     section#Assignment > div.content {
@@ -1984,7 +1954,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content > div > div > p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     section#Assignment > div.content > div:hover {
@@ -2000,52 +1970,43 @@ footer > div.content > div.right > div.name {
         }
     }
 
-    /* project section */
-    /*section#Project {*/
-    /*    padding: 2% 3%;*/
-    /*}*/
+    /* Project section */
 
-    /*section#Project h2 {*/
-    /*    font-size: 1.6rem;*/
-    /*}*/
+    section#Project > div.topic {
+        font-size: 1.1rem;
+    }
 
-    /*section#Project > div {*/
-    /*    padding: 1.5%;*/
-    /*    margin: 1% 6%;*/
-    /*    border-radius: 15px;*/
-    /*}*/
+    section#Project > div.content > div > div.left > img {
+        width: 100%;
+        height: 95%;
+        border-radius: 0.8rem;
+    }
 
-    /*section#Project > div > h2 {*/
-    /*    font-size: 1rem;*/
-    /*}*/
+    section#Project > div.content > div {
+        padding: 4% 4% 2% 4%;
+    }
 
-    /*section#Project > div > p {*/
-    /*    font-size: 0.6rem;*/
-    /*    margin: 6% 5% 6% 5%;*/
-    /*}*/
+    section#Project > div.content > div > div.right {
+        padding: 3% 0 0 8%;
+    }
 
-    /*section#Project > div > .list ul li {*/
-    /*    padding: 0.6rem;*/
-    /*    width: 40%;*/
-    /*    font-size: 10px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h2 {
+        font-size: 0.6rem;
+    }
 
-    /*section#Project > div > img {*/
-    /*    width: 40px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h3 {
+        font-size: 0.4rem;
+    }
 
-    /*section#Project > div > button {*/
-    /*    padding: 0.6rem 1.2rem;*/
-    /*    font-size: 0.8rem;*/
-    /*    margin-top: 2%;*/
-    /*    margin-bottom: 2%;*/
-    /*}*/
+    section#Project > div.content > div > div.right > p {
+        font-size: 0.37rem;
+        margin-bottom: 0;
+    }
 
-    /*section#Project > button {*/
-    /*    width: 35px;*/
-    /*    height: 35px;*/
-    /*    font-size: 0.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > button {
+        margin-top: 0;
+        font-size: 0.35rem;
+    }
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -2280,7 +2241,7 @@ footer > div.content > div.right > div.name {
     /* about me section */
     section#About > div.left > img {
         width: 60%;
-        margin: 15px auto;
+        margin: 25px auto;
     }
 
     section#About > div.right > div > div.desc > h2 {
@@ -2309,7 +2270,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Education > div.topic > h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     section#Education > div.content > article {
@@ -2339,7 +2300,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.topic > h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     section#Assignment > div.content {
@@ -2358,7 +2319,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content > div > div > p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     section#Assignment > div.content > div:hover {
@@ -2374,53 +2335,43 @@ footer > div.content > div.right > div.name {
         }
     }
 
-    /* project section */
-    /*section#Project {*/
-    /*    padding: 2% 3%;*/
-    /*}*/
+    /* Project section */
 
-    /*section#Project h2 {*/
-    /*    font-size: 1.6rem;*/
-    /*}*/
+    section#Project > div.topic {
+        font-size: 1rem;
+    }
 
-    /*section#Project > div {*/
-    /*    padding: 1.5%;*/
-    /*    margin: 1% 6%;*/
-    /*    border-radius: 15px;*/
-    /*}*/
+    section#Project > div.content > div > div.left > img {
+        width: 100%;
+        height: 95%;
+        border-radius: 0.8rem;
+    }
 
-    /*section#Project > div > h2 {*/
-    /*    font-size: 1rem;*/
-    /*    margin-top: 5%;*/
-    /*}*/
+    section#Project > div.content > div {
+        padding: 4% 4% 2% 4%;
+    }
 
-    /*section#Project > div > p {*/
-    /*    font-size: 0.6rem;*/
-    /*    margin: 6% 5% 6% 5%;*/
-    /*}*/
+    section#Project > div.content > div > div.right {
+        padding: 3% 0 0 8%;
+    }
 
-    /*section#Project > div > .list ul li {*/
-    /*    padding: 0.6rem;*/
-    /*    width: 40%;*/
-    /*    font-size: 10px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h2 {
+        font-size: 0.6rem;
+    }
 
-    /*section#Project > div > img {*/
-    /*    width: 40px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h3 {
+        font-size: 0.35rem;
+    }
 
-    /*section#Project > div > button {*/
-    /*    padding: 0.6rem 1.2rem;*/
-    /*    font-size: 0.8rem;*/
-    /*    margin-top: 2%;*/
-    /*    margin-bottom: 2%;*/
-    /*}*/
+    section#Project > div.content > div > div.right > p {
+        font-size: 0.32rem;
+        margin-bottom: 0;
+    }
 
-    /*section#Project > button {*/
-    /*    width: 35px;*/
-    /*    height: 35px;*/
-    /*    font-size: 0.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > button {
+        margin-top: 0;
+        font-size: 0.35rem;
+    }
 
     /*Skill section*/
     section#Skills > div.topic {
@@ -2760,55 +2711,43 @@ footer > div.content > div.right > div.name {
         }
     }
 
-    /* project section */
-    /*section#Project {*/
-    /*    padding: 2% 3%;*/
-    /*}*/
+    /* Project section */
 
-    /*section#Project h2 {*/
-    /*    font-size: 1.1rem;*/
-    /*    margin-bottom: 1rem;*/
-    /*    margin-top: 1rem;*/
-    /*}*/
+    section#Project > div.topic {
+        font-size: 0.8rem;
+    }
 
-    /*section#Project > div {*/
-    /*    padding: 1.5%;*/
-    /*    margin: 1% 6%;*/
-    /*    border-radius: 15px;*/
-    /*}*/
+    section#Project > div.content > div > div.left > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+    }
 
-    /*section#Project > div > h2 {*/
-    /*    font-size: 0.8rem;*/
-    /*    margin-top: 5%;*/
-    /*}*/
+    section#Project > div.content > div {
+        padding: 4% 4% 4% 4%;
+    }
 
-    /*section#Project > div > p {*/
-    /*    font-size: 0.5rem;*/
-    /*    margin: 6% 5% 6% 5%;*/
-    /*}*/
+    section#Project > div.content > div > div.right {
+        padding: 3% 0 0 8%;
+    }
 
-    /*section#Project > div > .list ul li {*/
-    /*    padding: 0.6rem;*/
-    /*    width: 40%;*/
-    /*    font-size: 8px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h2 {
+        font-size: 0.6rem;
+    }
 
-    /*section#Project > div > img {*/
-    /*    width: 40px;*/
-    /*}*/
+    section#Project > div.content > div > div.right > h3 {
+        font-size: 0.35rem;
+    }
 
-    /*section#Project > div > button {*/
-    /*    padding: 0.6rem 1.2rem;*/
-    /*    font-size: 0.6rem;*/
-    /*    margin-top: 2%;*/
-    /*    margin-bottom: 2%;*/
-    /*}*/
+    section#Project > div.content > div > div.right > p {
+        font-size: 0.32rem;
+        margin-bottom: 0;
+    }
 
-    /*section#Project > button {*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    font-size: 0.8rem;*/
-    /*}*/
+    section#Project > div.content > div > div.right > button {
+        margin-top: 0;
+        font-size: 0.3rem;
+    }
 
     /*Skill section*/
     section#Skills > div.topic {
