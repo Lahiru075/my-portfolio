@@ -248,7 +248,6 @@ section#About > div.right > div > div.desc > p {
 section#Education {
     background-color: #090810;
     position: relative;
-    padding: 2%;
 }
 
 section#Education > div.topic {
@@ -269,6 +268,7 @@ section#Education > div.content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    width: 100vw;
 }
 
 section#Education > div.content > article {
