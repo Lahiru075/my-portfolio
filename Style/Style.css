@@ -7,7 +7,11 @@
 
 body {
     position: relative;
-    background-color: black;
+    background-color: #090810;
+}
+
+section {
+    position: relative;
 }
 
 header {
@@ -1413,7 +1417,7 @@ footer > div.content > div.right > div.name {
 
     header > img#menu_icon{
         display: block;
-        width: 4%;
+        width: 5%;
         position: absolute;
         right: 1%;
     }
@@ -1498,9 +1502,14 @@ footer > div.content > div.right > div.name {
         width: 45%;
         position: relative;
         display: block;
-        margin: 35px auto;
+        margin: 50px auto;
         left: 0;
         box-shadow: 0 0 30px 4px rgba(18, 255, 219, 0.5);
+    }
+
+    section#About > div.left > img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px 4px rgba(18, 255, 219, 0.7);
     }
 
     section#About > div.right > div {
@@ -1861,9 +1870,14 @@ footer > div.content > div.right > div.name {
     /* about me section */
     section#About > div.left > img {
         width: 60%;
-        margin: 25px auto;
+        margin: 40px auto;
         box-shadow: 0 0 20px 4px rgba(18, 255, 219, 0.5);
 
+    }
+
+    section#About > div.left > img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px 4px rgba(18, 255, 219, 0.7);
     }
 
     section#About > div.right > div > div.desc > h2 {
@@ -2241,7 +2255,12 @@ footer > div.content > div.right > div.name {
     /* about me section */
     section#About > div.left > img {
         width: 60%;
-        margin: 25px auto;
+        margin: 35px auto;
+    }
+
+    section#About > div.left > img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px 4px rgba(18, 255, 219, 0.7);
     }
 
     section#About > div.right > div > div.desc > h2 {
