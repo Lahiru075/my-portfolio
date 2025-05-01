@@ -98,7 +98,7 @@ section#Home > div.left > div > div.desc > p {
     margin-bottom: 5%;
 }
 
-section#Home > div.left > div > div.desc > h2 {
+section#Home > div.left > div > div.desc > h2{
     font-size: 3rem;
     margin-bottom: 2%;
 }
@@ -111,17 +111,45 @@ section#Home > div.left > div > div.desc > h2.job {
     color: #4CC9FE;
     margin-left: 3rem;
     margin-bottom: 6%;
-    animation: moveRight 2s 1 forwards;
+    position: relative;
+    display: inline-block;
 }
 
-@keyframes moveRight {
+.job .typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(15, end) infinite;
+    position: relative;
+}
+
+.job .cursor {
+    display: inline-block;
+    position: absolute;
+    animation: blink 0.6s infinite;
+}
+
+@keyframes typing {
     0% {
-        transform: translateX(-100px);
-        opacity: 0;
+        width: 0;
+    }
+    45% {
+        width: 100%;
+    }
+    55% {
+        width: 100%;
+    }
+    95% {
+        width: 0;
     }
     100% {
-        transform: translateX(0px);
-        opacity: 1;
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
     }
 }
 
@@ -371,11 +399,11 @@ section#Assignment > div.topic > h2 {
 
 section#Assignment > div.content {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     gap: 4%;
-    width: 100%;
+    width: 225%;
     animation-name: slideLeft;
-    animation-duration: 15s;
+    animation-duration: 22s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -412,6 +440,17 @@ section#Assignment > div.content > div > div > p {
     font-size: 1.1rem;
     color: #def1e3;
     text-align: center;
+}
+
+section#Assignment > div.content > div > div > a {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-size: 1.1rem;
+    color: #4CC9FE;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section#Assignment > div.content:hover {
@@ -879,12 +918,12 @@ footer > div.content > div.right > div.name {
     }
 
     section#Home > div.right > img {
-        width: 60%;
+        width: 65%;
     }
 
     /* about me section */
     section#About > div.left > img {
-        width: 65%;
+        width: 60%;
         left: 5%;
     }
 
@@ -930,11 +969,10 @@ footer > div.content > div.right > div.name {
     /* assignment section */
     section#Assignment > div.topic > h2 {
         font-size: 2.2rem;
-    /
     }
 
     section#Assignment > div.content {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(9, 1fr);
         gap: 3%;
     }
 
@@ -1163,7 +1201,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Home > div.right > img {
-        width: 75%;
+        width: 65%;
     }
 
     /* about me section */
@@ -1214,11 +1252,10 @@ footer > div.content > div.right > div.name {
     /* assignment section */
     section#Assignment > div.topic > h2 {
         font-size: 2.2rem;
-    /
     }
 
     section#Assignment > div.content {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(9, 1fr);
         gap: 3%;
     }
 
@@ -1232,7 +1269,7 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content > div > div > p {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     section#Assignment > div.content > div:hover {
@@ -1593,13 +1630,15 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(9, 1fr);
         gap: 3%;
+        width: 185%;
     }
 
     section#Assignment > div.content > div {
         width: 40vw;
         height: 45vh;
+        margin: 3%;
     }
 
     section#Assignment > div.content > div > div > h3 {
@@ -1607,6 +1646,10 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content > div > div > p {
+        font-size: 1rem;
+    }
+
+    section#Assignment > div.content > div > div > a {
         font-size: 1rem;
     }
 
@@ -1958,14 +2001,17 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 3%;
-        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4%;
+        margin: 0 0 20% 0;
+        width: 32%;
+        animation-duration: 10s;
     }
 
     section#Assignment > div.content > div {
         width: 60vw;
         height: 30vh;
+        margin: 0 15px 0 0;
     }
 
     section#Assignment > div.content > div > div > h3 {
@@ -1973,6 +2019,10 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content > div > div > p {
+        font-size: 0.7rem;
+    }
+
+    section#Assignment > div.content > div > div > a {
         font-size: 0.7rem;
     }
 
@@ -2328,14 +2378,17 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 3%;
-        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4%;
+        margin: 0 0 25% 0;
+        width: 34%;
+        animation-duration: 10s;
     }
 
     section#Assignment > div.content > div {
         width: 60vw;
         height: 30vh;
+        margin: 0 18px 0 0;
     }
 
     section#Assignment > div.content > div > div > h3 {
@@ -2343,6 +2396,10 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content > div > div > p {
+        font-size: 0.7rem;
+    }
+
+    section#Assignment > div.content > div > div > a {
         font-size: 0.7rem;
     }
 
@@ -2704,14 +2761,17 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 3%;
-        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4%;
+        margin: 0 0 25% 0;
+        width: 35%;
+        animation-duration: 10s;
     }
 
     section#Assignment > div.content > div {
         width: 60vw;
         height: 30vh;
+        margin: 0 18px 0 0;
     }
 
     section#Assignment > div.content > div > div > h3 {
@@ -2719,6 +2779,11 @@ footer > div.content > div.right > div.name {
     }
 
     section#Assignment > div.content > div > div > p {
+        font-size: 0.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section#Assignment > div.content > div > div > a {
         font-size: 0.6rem;
     }
 
