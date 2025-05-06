@@ -8,8 +8,28 @@
 body {
     position: relative;
     background-color: #090810;
+    /*overflow-x: hidden;*/
+}
+section#Home,
+section#About,
+section#Education,
+section#Assignment,
+section#Project,
+section#Skills,
+section#Contact {
+    overflow: hidden;
+}
+
+[data-aos] {
+    max-width: 100%;
     overflow-x: hidden;
 }
+
+.aos-animate {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 section {
     position: relative;
@@ -368,7 +388,8 @@ section#Education > div.content > article > div.right > div > img {
 section#Assignment {
     background-color: #090810;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 section#Assignment > div.topic {
