@@ -191,6 +191,7 @@ section#Home > div.left > div > div.img > a > img:hover {
 
 section#Home > div.right {
     position: relative;
+    overflow: visible;
 }
 
 section#Home > div.right > img{
@@ -904,9 +905,14 @@ footer > div.content > div.right > div.name {
     }
 
     /* home section */
-    section#Home > div {
-        height: 100vh;
-    }
+
+    /*section#Home {*/
+    /*    height: 80vh;*/
+    /*}*/
+
+    /*section#Home > div {*/
+    /*    height: 80vh;*/
+    /*}*/
 
     section#Home > div.left > div {
         width: 80%;
@@ -933,6 +939,15 @@ footer > div.content > div.right > div.name {
     }
 
     /* about me section */
+
+    section#About {
+        height: 80vh;
+    }
+
+    section#About > div {
+        height: 80vh;
+    }
+
     section#About > div.left > img {
         width: 60%;
         left: 5%;
@@ -1187,9 +1202,14 @@ footer > div.content > div.right > div.name {
     }
 
     /* home section */
-    section#Home > div {
-        height: 100vh;
-    }
+
+    /*section#Home {*/
+    /*    height: 80vh;*/
+    /*}*/
+
+    /*section#Home > div {*/
+    /*    height: 80vh;*/
+    /*}*/
 
     section#Home > div.left > div {
         width: 80%;
@@ -1216,6 +1236,15 @@ footer > div.content > div.right > div.name {
     }
 
     /* about me section */
+
+    section#About {
+        height: 80vh;
+    }
+
+    section#About > div {
+        height: 80vh;
+    }
+
     section#About > div.left > img {
         width: 65%;
         left: 5%;
