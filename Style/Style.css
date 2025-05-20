@@ -219,6 +219,7 @@ section#About > div {
     position: relative;
 }
 
+
 section#About > div.left > img {
     width: 55%;
     position: absolute;
@@ -421,7 +422,7 @@ section#Assignment > div.content {
 
 section#Assignment > div.content > div {
     width: 25vw;
-    height: 60vh;
+    height: 45vh;
     background-color: rgba(13, 50, 64, 0.42);
     border-radius: 10%;
     padding: 5%;
